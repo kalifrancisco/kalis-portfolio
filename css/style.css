@@ -1,0 +1,943 @@
+body {
+	background-color: #161414;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'Inconsolata Extra Light';
+    src: url('../Inconsolata/static/Inconsolata-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Light';
+    src: url('../Inconsolata/static/Inconsolata-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Regular';
+    src: url('../Inconsolata/static/Inconsolata-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Inconsolata Medium';
+    src: url('../Inconsolata/static/Inconsolata-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata SemiBold';
+    src: url('../Inconsolata/static/Inconsolata-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Bold';
+    src: url('../Inconsolata/static/Inconsolata-Bold.ttf');
+}
+
+
+@font-face {
+	font-family: "Helvetica Now Text Bold";
+	src: url("../helveticanow/HelveticaNowText-Bold.woff") format("WOFF");
+}
+
+@font-face {
+	font-family: "Helvetica Now Text Light";
+	src: url("../helveticanow/HelveticaNowText-Light.woff") format("WOFF");
+}
+
+@font-face {
+	font-family: "Helvetica Now Text Medium";
+	src: url("../helveticanow/HelveticaNowText-Medium.woff") format("WOFF");
+}
+
+@font-face {
+	font-family: "Helvetica Now Text Regular";
+	src: url("../helveticanow/HelveticaNowText-Regular.woff") format("WOFF");
+}
+
+@font-face {
+	font-family: "Helvetica Now Text Regular Italic";
+	src: url("../helveticanow/HelveticaNowText-RegIta.woff") format("WOFF");
+}
+
+* {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	cursor: none;
+}
+
+.nav_links {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: end; 
+	flex-direction: column;
+    align-items: flex-end;
+    font-family: "Helvetica Now Text Regular";
+    text-transform: uppercase;
+    align-content: flex-end;
+    flex-wrap: wrap;
+	z-index: -10;
+	margin-top: -25px;
+} 
+
+.new_logo {
+	width: 33%;
+	z-index: 99;
+	padding-left: 15px;
+	margin-top: 30px;
+}
+
+.navitem {
+	padding: 8px;
+	font-size: 13.5px;
+}
+
+/* new index mobile */
+.index-group {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	font-size: 9.5px;
+	font-family: 'Inconsolata Light';
+	align-items: center;
+	line-height: 130%;
+	margin-top: 80px;
+}
+
+.indx_line {
+	width: 86vw;
+	height: .04px;
+	background-color: white;
+	margin-top: 1.5%;
+	margin-bottom: .7%;
+}
+
+.sect {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 120px;
+}
+
+.sect:nth-child(1) {
+	margin-top: 5%;
+}
+
+/* THREE - flex for index sections */
+.welcome-index {
+	display: flex;
+	width: 86vw;
+}
+
+.front {
+	z-index: 1;
+}
+
+.welcome-txt1 {
+	font-family: "Inconsolata Light";
+}
+
+.welcome-txt {
+	display: flex;
+	align-items: stretch;
+	width: 86vw;
+	justify-content: space-between;
+}
+
+.welcome-desc1 {
+	width: 55%;
+}
+
+.welcome-desc2 {
+	width: 55%;
+}
+
+.bold {
+	font-family: 'Inconsolata Bold';
+}
+
+.and-flex {
+	display: flex;
+}
+
+.and-flex img {
+	height: 25px;
+	z-index: -99;
+	padding: 0% 0% 0% 6%;
+	margin-top: -13%;
+}
+
+.and-flex p {
+	z-index: 9;
+}
+
+.designer {
+	margin-left: -3.5%;
+}
+
+/* MOBILE NEW FOOTER: */
+.outer-foot {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50%;
+		padding: 5px 25px 15px 25px; 
+		background-color: #4f474751;
+	}
+
+	.foot-container {
+		display: flex;
+		flex-direction: row;
+		padding: .5%;
+		justify-content: space-between;
+	}
+
+	.credit {
+		margin-top: 45%;
+		display: flex;
+		width: 90%;
+		align-items: center;
+	}
+
+	.foot-phones {
+		width: 32%;
+		margin-right: 3.5%;
+	} 
+
+	.row-kf {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		margin-right: 30px;
+	}
+
+	.credit, .credit-txt {
+		font-family: "Helvetica Now Text Regular";
+		color: white; 
+		width: 75%;
+		font-size: 9px;
+		line-height: 11px;
+		margin-left: .8%;
+		text-transform: uppercase;
+		opacity: 85%;
+	}
+
+	.kf-23 {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.simple-foot-links li:nth-child(1) {
+		padding-top: 12px; 
+	}
+
+	.simple-foot-links {
+		width: 50vw;
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 4%;
+		align-items: flex-end;
+		list-style: none;
+	}
+
+	.simple-foot-links li a {
+		font-size: 10px;
+		font-family: "Inconsolata Regular";
+		color: white; 
+		padding: 5px;
+	}
+
+	.simple-foot-links li {
+		padding-top: 4.5px;
+	}
+
+	.grey-foot {
+		font-size: 10px;
+		font-family: "Inconsolata Light";
+		color: white; 
+		opacity: 60%;
+	}
+/* END NEW MOBILE FOOTER */
+
+
+
+/* NEW PROJ MOBILE PAGE: */
+
+.proj-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 60px 20px 60px 20px;
+}
+
+.proj-h1 {
+	font-family: "Inconsolata SemiBold";
+	font-size: 16px;
+	color: white;
+}
+
+.about-div-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 65px;
+}
+
+.projs-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.sq-proj {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 12%;
+
+}
+
+/* bubble flex: */
+.proj-h2 {
+	font-family: "Helvetica Now Text Medium";
+	color: white;
+	font-size: 12px;
+	margin-bottom: 3%;
+}
+
+.proj-img {
+	width: 95%;
+	margin-bottom: 2%;
+}
+
+.proj-head-flex {
+	margin-right: 7%;
+}
+
+.proj-h2 a {
+	color: white;
+}
+
+.proj-h3 {
+	font-family: "Inconsolata Medium";
+	color: white;
+	font-size: 9px;
+	margin-bottom: 1%;
+}
+
+.proj-desc {
+	color: white;
+	font-family: "Inconsolata Light";
+	font-size: 7px;
+}
+
+
+
+.kf:hover, .new_logo:hover {
+	transform: rotate(-3deg);
+}
+
+.kf, .new_logo {
+	transition: transform 120ms ease-in-out;
+	transition-delay: 60ms;
+}
+
+.nav_links li a {
+	color: white;
+	padding: 0 10px;
+}
+
+.current {
+	color: white;
+	font-family: "Helvetica Now Text Bold";
+}
+
+.nav_links .nav_item1:hover, .nav_links .nav_item2:hover, .nav_links .nav_item3:hover {
+	font-family: "Helvetica Now Text Bold";
+	transform: translateY(-5.3px);
+}
+
+nav li:current {
+	color: green;
+}
+
+
+nav:focus {
+	text-decoration: underline;
+}
+
+.skip a {
+	background: white;
+	border-radius: round;
+	padding: 3px;
+	-webkit-transition: top .5s ease-out;
+	transition: top .5s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -40px;
+}
+  
+.skip a:focus {
+	position: absolute;
+	top: 20px;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    background-color: #241F1F;
+    margin-top: 100%;
+    padding: 25px 15px 2px 15px;
+}
+
+.footer_links {
+	list-style: none;
+	font-size: 10px;
+	margin-top: -15.8%;
+	font-family: "Helvetica Now Text Medium";
+    text-transform: uppercase;
+	margin: auto;
+
+	display: flex;
+	justify-content: start; 
+	flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+
+/* NEW ABOUT MOBILE */
+.about-cols {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about-h1 {
+	font-family: "Inconsolata SemiBold";
+	font-size: 25px;
+	color: white;
+	margin-right: 13%;
+}
+
+.pic-about-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.abst {
+	font-size: 13px;
+	font-family: "Inconsolata Light";
+	color: white;
+	line-height: 16px;
+	opacity: 90%;
+}
+
+.about-img {
+	width: 60%;
+	margin-bottom: 1%;
+}
+
+.interests-div {
+	margin: 10% 0% 25% 0%;
+}
+
+
+.name-ab {
+	color: white;
+	font-family: "Inconsolata SemiBold";
+	font-size: 14px;
+	padding: 7px 7px 7px 0px;
+}
+
+.about-h1-col {
+	margin-right: 17%;
+	margin-bottom: 5%;
+	align-self: flex-start;
+}
+
+.ab-head-sub {
+	color: #8d8282;
+	font-family: "Inconsolata SemiBold";
+	font-size: 11px;
+	line-height: 14px;
+}
+
+
+.pic-div {
+	display: flex;
+	flex-direction: column;
+	margin: 0% 2% 25% 0%;
+}
+
+.cur-head {
+	color: white;
+	opacity: 55%;
+	font-family: "Inconsolata SemiBold";
+	font-size: 13px;
+}
+
+.col-head {
+	color: white;
+	font-family: "Inconsolata SemiBold";
+	font-size: 14px;
+	padding-bottom: 7%;
+}
+
+.purpose-col {
+	margin: 0% 5.5% 25% 0%;
+}
+
+.phil-col {
+	margin: 0% 5.5% 0% 0%;
+}
+
+.currently {
+	font-size: 14px;
+	letter-spacing: .3mm;
+	color: #FF9595;
+	font-family: "Inconsolata SemiBold";
+	padding: 0px 0px 7px 0px;
+} 
+
+.bold-sub {
+	font-family: "Inconsolata Bold";
+	color: white;
+}
+
+.link-hover:hover {
+	color: #786d6d;
+}
+
+.currently-list li{
+	list-style-type: none;
+	color: white;
+	padding-bottom: 1.5%;
+}
+
+.cur-sub {
+	color: white;
+	font-family: "Inconsolata Medium";
+	font-size: 14px;
+	padding-left: 3%;
+}
+
+.currently-list li:nth-child(even) {
+	padding-bottom: 5%;
+}
+
+
+/*     LAPTOP MEDIA QUERY  */
+@media screen and (min-width: 768px) { 
+
+	/* CURSOR STYLING */
+	.inner_cursor {
+		position: fixed;
+		left: 10px;
+		width: 19px;
+		height: 19px;
+		transform: translate(-50%, -50%);
+		background-color: white;
+		/* opacity: .5%; */
+		/* border: 2.2px solid white; */
+		mix-blend-mode: difference;
+		border-radius: 50%;
+		pointer-events: none;
+		transition: width 0.9s, height 0.9s;
+	}
+
+	.inner_cursor.grow {
+		width: 50px;
+		height: 50px;
+		transition: width 0.9s, height 0.9s;
+	}
+
+	/* js transition on load */
+	.hidden {
+		opacity: 0;
+		transition: all 1s;
+		transform: translateX(-100%);
+	}
+
+	.show {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0);
+	}
+	  
+	main {
+		margin: 40px;
+	}
+	
+	.nav_links {
+		list-style: none;
+		display: flex;
+		justify-content: end;
+		flex-direction: row;
+		align-items: center;
+		font-family: "Helvetica Now Text Medium";
+		text-transform: uppercase;
+		padding: 0px;
+		padding-top: 2.5%;
+		margin: 0;
+		z-index: 100;
+	}
+
+	.navitem {
+		font-size: 15.5px;
+		transition: transform 220ms ease-in-out;
+		transition-delay: 80ms;
+	}
+
+	.navfixed {
+		margin: 0 20px 0 20px;
+	}
+	
+	nav img {
+		position: fixed;
+	}
+
+	.kf {
+		padding: 25px;
+	}
+
+	 .white_line_small {
+		width: 91vw;
+		height: .04px;
+		background-color: white;
+		margin-top: 1.5%;
+		position: absolute;
+	} 
+
+
+	/* ———————————————————————————————————————————————————————new_index.html———————————————————— */
+	.index-group {
+		font-size: 17px;
+		line-height: 118%;
+	}
+
+	.new_logo {
+		width: 14%;
+		padding-top: -5px;
+	}
+
+	/* THREE - flex for index sections */
+	.welcome-index {
+		display: flex;
+		width: 86vw;
+	}
+
+	.front {
+		z-index: 1;
+	}
+
+	.welcome-txt1 {
+		font-family: "Inconsolata Light";
+	}
+	
+	.welcome-txt {
+		display: flex;
+		align-items: stretch;
+		width: 86vw;
+		justify-content: space-between;
+	}
+
+	.welcome-desc1 {
+		width: 55%;
+	}
+
+	.welcome-desc2 {
+		width: 55%;
+	}
+
+	.and-flex img {
+		height: 38px;
+	}
+	/* —————————————————————————————————————- */
+
+	.hithere {
+		margin-left: 90px;
+	}
+	
+	.fl {
+		padding: 10px;
+	}
+
+	/* NEW FOOTERRR */
+	.outer-foot {
+		display: flex;
+		flex-direction: column;
+		margin-top: 30%;
+		padding: 5px 25px 15px 25px; 
+		background-color: #4f474751;
+	}
+
+	.foot-container {
+		display: flex;
+		flex-direction: row;
+		padding: .5%;
+		justify-content: space-between;
+	}
+
+	.credit {
+		margin-top: 16%;
+		display: flex;
+		width: 90%;
+		align-items: center;
+	}
+
+	.foot-phones {
+		width: 9%;
+		margin-right: 1%;
+	} is
+
+	.credit, .credit-txt {
+		font-family: "Helvetica Now Text Regular";
+		color: white; 
+		font-size: 12.5px;
+		width: 25%;
+		line-height: 15.5px;
+		margin-left: .8%;
+		text-transform: uppercase;
+		opacity: 85%;
+	}
+
+	.kf-23 {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.simple-foot-links li:nth-child(1) {
+		padding-right: 30px; 
+	}
+
+	.simple-foot-links {
+		flex-direction: row;
+		display: flex;
+		margin-top: 4%;
+		align-items: flex-end;
+		list-style: none;
+		width: 37vw;
+	}
+
+	.simple-foot-links li a {
+		font-size: 14px;
+		font-family: "Inconsolata Regular";
+		color: white; 
+		padding: 10px;
+	}
+
+	.simple-foot-links li a:hover {
+		font-size: 14px;
+		font-family: "Inconsolata SemiBold";
+		color: #786d6d; 
+		padding: 10px;
+	}
+
+	.grey-foot {
+		font-size: 14px;
+		font-family: "Inconsolata Light";
+		color: white; 
+		opacity: 60%;
+	}
+
+	/* NEW PROJECTS LAPTOP  --------------------------------------------------------------------------*/
+	.proj-wrapper {
+		margin: 90px 70px 70px 70px;
+	}
+
+	.proj-h1 {
+		font-size: 25px;
+		margin: 0% 13% 0% 0%;
+	}
+	
+	.about-div-wrapper {
+		display: flex;
+		justify-content: center;
+		margin: 90px 70px 70px 70px;
+	}
+
+	.projs-flex {
+		display:grid;
+		grid-template-columns: 34vw 34vw;
+		grid-row: auto auto;
+		grid-column-gap: 0px;
+		grid-row-gap: 10%;
+	}
+
+	.sq-proj {
+		margin-bottom: 0;
+	}
+
+	/* bubble flex: */
+	.proj-h2 {
+		font-family: "Helvetica Now Text Medium";
+		color: white;
+		font-size: 18px;
+		margin-bottom: 2%;
+	}
+
+	.proj-img {
+		width: 82%;
+		margin-bottom: 2%;
+	}
+
+	.proj-head-flex {
+		margin-right: 13%;
+	}
+
+	.proj-h2 a {
+		color: white;
+	align-items: center;
+	}
+
+	.proj-h3 {
+		font-size: 13px;
+		margin-bottom: 1%;
+	}
+
+	.proj-desc {
+		font-size: 12px;
+	}
+
+	/* NEW ABOUT LAPTOP: */
+	.about-cols {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.about-h1 {
+		font-family: "Inconsolata SemiBold";
+		font-size: 25px;
+		color: white;
+		margin-right: 13%;
+	}
+
+	.pic-about-col {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+
+	.abst {
+		font-size: 13px;
+		font-family: "Inconsolata Light";
+		color: white;
+		line-height: 16px;
+		opacity: 90%;
+	}
+
+	.about-img {
+		width: 60%;
+		margin-bottom: 1%;
+	}
+
+	.interests-div {
+		margin-top: 10%;
+	}
+	
+
+	.name-ab {
+		color: white;
+		font-family: "Inconsolata SemiBold";
+		font-size: 14px;
+		padding: 7px 7px 7px 0px;
+	}
+
+	.about-h1-col {
+		margin-right: 17%;
+	}
+
+	.ab-head-sub {
+		color: #8d8282;
+		font-family: "Inconsolata SemiBold";
+		font-size: 11px;
+		line-height: 14px;
+	}
+
+
+	.pic-div {
+		display: flex;
+		flex-direction: column;
+		margin: 0% 2% 14% 0%;
+	}
+
+	.cur-head {
+		color: white;
+		opacity: 55%;
+		font-family: "Inconsolata SemiBold";
+		font-size: 13px;
+	}
+
+	.col-head {
+		color: white;
+		font-family: "Inconsolata SemiBold";
+		font-size: 14px;
+		padding-bottom: 7%;
+	}
+
+	.purpose-col {
+		width: 25%;
+		margin: 0% 5.5% 0% 0%;
+	}
+
+	.phil-col {
+		width: 25%;
+		margin: 0% 5.5% 0% 0%;
+	}
+
+	.currently {
+		font-size: 14px;
+		letter-spacing: .3mm;
+		color: #FF9595;
+		font-family: "Inconsolata SemiBold";
+		padding: 0px 0px 7px 0px;
+	} 
+
+	.bold-sub {
+		font-family: "Inconsolata Bold";
+		color: white;
+	}
+
+	.link-hover:hover {
+		color: #786d6d;
+	}
+
+	.currently-list li{
+		list-style-type: none;
+		color: white;
+		padding-bottom: 1.5%;
+	}
+
+	.cur-sub {
+		color: white;
+		font-family: "Inconsolata Medium";
+		font-size: 14px;
+		padding-left: 3%;
+	}
+
+	.currently-list li:nth-child(even) {
+		padding-bottom: 5%;
+	}
+
+	@media (prefers-reduced-motion) {
+		hidden {
+			transition: none;
+		}
+
+		inner_cursor {
+			transition: none;
+		}
+
+		outer_cursor {
+			transition: none;
+		}
+
+		navitem {
+			transition: none;
+		}
+	}
+}
