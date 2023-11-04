@@ -347,7 +347,7 @@ body {
 
 .nav_links li a {
 	color: white;
-	padding: 0 10px;
+	padding: 0 5px;
 }
 
 .current {
@@ -355,9 +355,15 @@ body {
 	font-family: "Helvetica Now Text Bold";
 }
 
-.nav_links .nav_item1:hover, .nav_links .nav_item2:hover, .nav_links .nav_item3:hover {
+
+.nav_links .nav_item1:hover, .nav_links .nav_item2:hover, .nav_links .nav_item3:hover, .nav_item4:hover {
 	font-family: "Helvetica Now Text Bold";
 	transform: translateY(-5.3px);
+}
+
+.navimg {
+	width: 3%;
+
 }
 
 nav li:current {
@@ -581,19 +587,19 @@ nav:focus {
 		font-family: "Helvetica Now Text Medium";
 		text-transform: uppercase;
 		padding: 0px;
-		padding-top: 2.5%;
+		padding-top: 1%;
 		margin: 0;
 		z-index: 100;
 	}
 
 	.navitem {
-		font-size: 15.5px;
+		font-size: 12px;
 		transition: transform 220ms ease-in-out;
-		transition-delay: 80ms;
+		transition-delay: 60ms;
 	}
 
 	.navfixed {
-		margin: 0 20px 0 20px;
+		margin: 0 5px 0 5px;
 	}
 	
 	nav img {
@@ -620,8 +626,9 @@ nav:focus {
 	}
 
 	.new_logo {
-		width: 14%;
-		padding-top: -5px;
+		width: 12%;
+		/* z-index: -100; */
+		margin-top: 5px;
 	}
 
 	/* THREE - flex for index sections */
@@ -657,6 +664,60 @@ nav:focus {
 		height: 38px;
 	}
 	/* —————————————————————————————————————- */
+	.about-img-blur {
+		width: 8%;
+	}
+
+	.indx_line_new {
+		width: 60%;
+		margin-left: 3px;
+		height: .04px;
+		background-color: white;
+		margin-top: 6px;
+		z-index: 100;
+	}
+
+	.h2-index {
+		font-size: 38px;
+		line-height: 130%;
+		font-family: "Helvetica Now Text Regular";
+		color: white;
+		width: 80%;
+	}
+
+	.blur-wrapper {
+		margin-top: 15%;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.location-index {
+		font-family: "Helvetica Now Text Regular";
+		color: white;
+		font-size: 12px;
+		line-height: 16px;
+		width: 20%;
+		z-index: -90;
+	}
+
+	.index-blur-div {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		width: 100%;
+		margin-left: 20%;
+	}
+
+	.pic-row {
+		margin-top: 2.5%;
+		display: flex;
+		justify-content: left;
+		align-items: flex-start;
+	}
+	
+	/* BLUR INDEX:—————————————————————————————————————- */
+
 
 	.hithere {
 		margin-left: 90px;
