@@ -88,15 +88,15 @@ body {
 } 
 
 .new_logo {
-	width: 33%;
+	width: 27%;
 	z-index: 99;
 	padding-left: 15px;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 .navitem {
-	padding: 8px;
-	font-size: 13.5px;
+	padding: 5px;
+	font-size: 10px;
 }
 
 /* new index mobile */
@@ -180,6 +180,58 @@ body {
 
 .designer {
 	margin-left: -3.5%;
+}
+
+
+/* NEW BLUR INDEX MOBILE */
+
+.indx_line_new {
+	width: 53%;
+	margin-left: -5%;
+	height: .04px;
+	background-color: white;
+	margin-top: 4px;
+	z-index: 100;
+}
+
+.h2-index {
+	font-size: 18px;
+	line-height: 130%;
+	font-family: "Helvetica Now Text Regular";
+	color: white;
+	width: 85%;
+}
+
+.blur-wrapper {
+	margin-top: 30%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 80%;
+}
+
+.location-index {
+	font-family: "Helvetica Now Text Regular";
+	color: white;
+	font-size: 7px;
+	line-height: 10px;
+	width: 30%;
+	z-index: -90;
+}
+
+.index-blur-div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: 100%;
+	margin-left: 10%;
+}
+
+.pic-row {
+	margin-top: 2.5%;
+	display: flex;
+	justify-content: left;
+	align-items: flex-start;
 }
 
 /* MOBILE NEW FOOTER: */
@@ -664,9 +716,6 @@ nav:focus {
 		height: 38px;
 	}
 	/* —————————————————————————————————————- */
-	.about-img-blur {
-		width: 8%;
-	}
 
 	.indx_line_new {
 		width: 60%;
@@ -715,7 +764,7 @@ nav:focus {
 		justify-content: left;
 		align-items: flex-start;
 	}
-	
+
 	/* BLUR INDEX:—————————————————————————————————————- */
 
 
