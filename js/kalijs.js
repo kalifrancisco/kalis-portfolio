@@ -43,3 +43,14 @@ const observer = new IntersectionObserver((entries) => {
 hiddenElements.forEach((thing) => observer.observe(thing))
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll("a");
+    for (var i = 0; i < links.length; i++) {
+        var href = links[i].getAttribute("href");
+        if (href.endsWith(".html")) {
+            links[i].setAttribute("href", href.slice(0, -5)); // Remove .html extension
+        }
+    }
+});
+
+
