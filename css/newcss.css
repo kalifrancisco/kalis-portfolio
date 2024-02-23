@@ -1481,6 +1481,25 @@ nav:focus {
 		line-height: 16px;
 	}
 
+	.arrow {
+    margin-top: 8%;
+    width: 1.5%;
+    opacity: .6;
+    animation: bounceDisappear 2.6s ease-in-out infinite;
+}
+
+@keyframes bounceDisappear {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
+
+
 
 	.pic-div {
 		display: flex;
