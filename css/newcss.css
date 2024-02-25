@@ -872,6 +872,7 @@ nav:focus {
 		border-radius: 50%;
 		pointer-events: none;
 		transition: width 0.9s, height 0.9s;
+		z-index: 111;
 	}
 
 	.new_logo.kf {
@@ -1005,7 +1006,7 @@ nav:focus {
 
 	.logo-wrap {
 		display: flex;
-		margin-left: 8%;
+		margin-left: 12%;
 	}
 
 	.index-logo {
