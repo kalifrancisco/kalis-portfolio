@@ -398,7 +398,7 @@ body {
 	margin-top: 2%;
 	font-size: 7px;
 	line-height: 145%;
-	color: #c4babab8;
+	color: #c4baba;
 }
 
 .intro-h2 {
@@ -758,7 +758,7 @@ nav:focus {
 	font-size: 10px;
 	font-family: "Helvetica Now Text Light";
 	color: #C4BABA;
-	line-height: 15px;
+	line-height: 135%;
 	opacity: 90%;
 }
 
@@ -959,13 +959,13 @@ nav:focus {
 	.intro-sub-text {
 		font-family: "Helvetica Now Text Light";
 		margin-top: 2%;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 135%;
 		color: #c4babab8;
 	}
 
 	.intro-h2 {
-		font-size: 14px;
+		font-size: 15px;
 		color: #afafaf;
 	}
 
@@ -1387,10 +1387,10 @@ nav:focus {
 	}
 
 	.abst {
-		font-size: 10px;
+		font-size: 12px;
 		font-family: "Helvetica Now Text Light";
 		color: #C4BABA;
-		line-height: 15px;
+		line-height: 135%;
 		opacity: 90%;
 	}
 
@@ -1506,12 +1506,12 @@ nav:focus {
 	}
 
 	.purpose-col {
-		width: 25%;
+		width: 27%;
 		margin: 0% 5.5% 0% 0%;
 	}
 
 	.phil-col {
-		width: 25%;
+		width: 27%;
 		margin: 0% 5.5% 0% 0%;
 	}
 
