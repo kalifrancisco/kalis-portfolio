@@ -658,8 +658,8 @@ body {
 }
 
 .proj-desc {
-	color: #c4babab2;
-	font-family: "Inconsolata Light";
+	color: #c4babac3;
+	font-family: "Inconsolata";
 	line-height: 130%;
 	font-size: 7px;
 	width: 85%;
@@ -1347,7 +1347,7 @@ nav:focus {
 	}
 
 	.proj-desc {
-		font-size: 10px;
+		font-size: 11px;
 	}
 
 	/* NEW ABOUT LAPTOP: */
