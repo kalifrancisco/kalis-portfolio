@@ -1418,6 +1418,9 @@ nav:focus {
 	.ski-hover {
 		cursor: url('/images/ski-hover.png'), auto; 
 	}
+	.write-hover {
+		cursor: url('/images/write-mouse.png'), auto; 
+	}
 
 	.small-proj {
 		width: 30%;
