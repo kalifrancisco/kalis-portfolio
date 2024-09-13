@@ -428,8 +428,7 @@ body {
 }
 
 .updated-foot {
-	color: #EFEFEF;
-	opacity: 40%;
+	color: #b1a8a8;
 	font-family: "Inconsolata";
 	font-size: 5px;
 }
@@ -497,8 +496,8 @@ body {
 .outer-foot {
 	display: flex;
 	flex-direction: column;
+	margin: 10px 20px 10px 20px;
 	margin-top: 18%;
-	padding: 5px 25px 15px 25px; 
 } 
 
 .footer-div {
@@ -590,8 +589,6 @@ body {
 }
 
 .updated-foot {
-	color: #EFEFEF;
-	opacity: 40%;
 	font-family: "Inconsolata";
 	font-size: 5px;
 }
@@ -1140,8 +1137,8 @@ nav:focus {
 	.outer-foot {
 		display: flex;
 		flex-direction: column;
+		margin: 90px 80px 30px 85px;
 		margin-top: 20%;
-		padding: 5px 25px 15px 25px; 
 	}
 
 	.foot-container {
@@ -1208,7 +1205,7 @@ nav:focus {
 	}
 
 	.updated-foot {
-		font-size: 9px;
+		font-size: 10px;
 	}
 
 	.kf-23 {
