@@ -303,7 +303,7 @@ body {
 .intro-wrap {
 	display: flex;
 	justify-content: center;
-	width: 29%;
+	width: 56%;
 }
 
 .index-pic {
@@ -748,7 +748,6 @@ nav:focus {
     align-content: flex-start;
 }
 
-
 /* NEW ABOUT MOBILE */
 .about-cols {
 	display: flex;
@@ -1123,6 +1122,10 @@ nav:focus {
 	}
 
 	/* BLUR INDEX:—————————————————————————————————————- */
+
+	.intro-wrap {
+		width: 29%;
+	}
 
 
 	.hithere {
