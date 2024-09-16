@@ -946,8 +946,8 @@ nav:focus {
 	.intro-sub-text, .abst {
 		font-family: "Helvetica Now Text Light";
 		margin-top: 4%;
-		font-size: 10px;
-		line-height: 140%;
+		font-size: 11px;
+		line-height: 145%;
 	}
 
 	.abst {
@@ -1121,7 +1121,7 @@ nav:focus {
 	/* BLUR INDEX:—————————————————————————————————————- */
 
 	.intro-wrap {
-		width: 29%;
+		width: 34%;
 	}
 
 
@@ -1536,13 +1536,13 @@ nav:focus {
 	}
 
 	.purpose-col {
-		width: 27%;
-		margin: 0% 5.5% 0% 0%;
+		width: 32%;
+		margin: 0% 5% 0% 0%;
 	}
 
 	.phil-col {
-		width: 27%;
-		margin: 0% 5.5% 0% 0%;
+		width: 32%;
+		margin: 0% 5% 0% 0%;
 	}
 
 	.currently {
