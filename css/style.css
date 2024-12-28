@@ -684,6 +684,8 @@ body {
 	border-radius: 2px;
 	cursor: default; 
 	white-space: nowrap;
+	transition: background-color 0.5s, color 0.5s; 
+	background-color: #1e1b1b;
 }
 
 .web-outer-warp {
@@ -2004,6 +2006,12 @@ nav:focus {
 	.about-tag {
 		font-size: 9px;
 		padding: 5px 5px;
+		transition: background-color 0.3s, color 0.3s; 
+	}
+
+	.about-tag:hover {
+		color: #211c1c;
+		background-color: rgba(243, 180, 191, 0.694);
 	}
 
 	.movie-hover {
