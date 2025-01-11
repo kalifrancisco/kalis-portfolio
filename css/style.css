@@ -79,8 +79,15 @@ body {
 }
 
 .fancy-mouse {
+	opacity: 1;
     width: 2.2%;
-    animation: bounce 2.1s ease-in-out infinite;
+    animation: bounce 1.8s ease-in-out infinite;
+}
+
+.fancy-mouse:hover {
+	animation: 0s;
+	opacity: .7;
+	transform:rotateZ(180deg);
 }
 
 .main-wrapper div {
@@ -313,6 +320,18 @@ body {
 
 .collage-h1 {
     margin-bottom: 4px;
+}
+
+.collage-cta {
+	color: #C4BABA;
+	font-family: "Helvetica Now Text Regular";
+	text-decoration: underline;
+	font-size: 10px;
+}
+
+.collage-cta:hover {
+	font-family: "Helvetica Now Text Medium Italic";
+	color: #988f8f;
 }
 
 .col-proj-desc {
@@ -897,7 +916,7 @@ body {
 .proj-heading {
     display: flex;
     flex-direction: column;
-    gap: 5px; /
+    gap: 5px; 
 }
 
 .proj-inside-header {
@@ -952,6 +971,10 @@ body {
 	line-height: 150%;
 }
 
+.collage-cta {
+	font-size: 13px;
+}
+
 .collage-header-wrap {
 	margin-bottom: 4%;
 }
@@ -967,7 +990,7 @@ body {
 	font-size: 12px;
 	font-family: "Inconsolata Medium";
 	color: #C4BABA;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 
 .collage-span {
@@ -1217,7 +1240,6 @@ nav:focus {
 
 
 /*     LAPTOP MEDIA QUERY  */
-/* LAPTOP NEW INDEXHTML KAL HERE */
 @media screen and (min-width: 768px) { 
 	.new_logo.kf {
 		width: 42px;
@@ -1428,8 +1450,6 @@ nav:focus {
 	.main-wrapper {
 		margin-top: 90px;
 	}
-
-	/* kal here 2 */
 	
 
 	/* ———————————————————————————————————————————————————————new_index.html———————————————————— */
@@ -1703,7 +1723,6 @@ nav:focus {
 		display: flex;
 		position: relative;
 		justify-content: center;
-		/* margin-bottom: 50px; */
 	}
 
 	.pot-back {
@@ -1828,19 +1847,15 @@ nav:focus {
 		bottom: -8%;
 		height: auto; 
 		transform: scale(1);
-		animation: growAndBounce 14s infinite ease-in-out;
-		pointer-events: none;
+		animation: growAndBounce 5s infinite ease-in-out;
 	}
 
 	@keyframes growAndBounce {
 		0%, 100% {
-			transform: translateY(0) scale(1); /* Original position and size */
-		}
-		25% {
-			transform: translateY(-3px) scale(1.2); /* Move up slightly and grow */
+			transform: translateY(0) scale(1); 
 		}
 		50% {
-			transform: translateY(3px) scale(1); /* Move down slightly */
+			transform: translateY(3px) scale(1.1); 
 		}
 	}
 
@@ -1876,30 +1891,40 @@ nav:focus {
 
 	.potluck-move {
 		width: 52%;
-		animation-delay: 8s;
 		bottom: -13%;
 		right: 12%;
-		animation: growAndBouncePot 10s infinite ease-in-out;
+		animation: growAndBouncePot 5s infinite ease-in-out;
 	}
 
 	.duo-move {
 		width: 18%;
 		bottom: 70%;
 		right: 72%;
-		animation-delay: 7s;
-		animation: growAndBouncePot 2s infinite ease-in-out;
+		animation: growAndBounceDuo 2s infinite ease-in-out;
 	}
 
 
 	@keyframes growAndBouncePot {
 		0%, 100% {
-			transform: translateY(0) scale(1); /* Original position and size */
+			transform: translateY(0) scale(1);
 		}
 		25% {
-			transform: translateY(-3px) scale(1.01); /* Move up slightly and grow */
+			transform: translateX(-5px) scale(1.05); 
 		}
 		50% {
-			transform: translateY(3px) scale(1); /* Move down slightly */
+			transform: translateY(5px);
+		}
+	}
+
+	@keyframes growAndBounceDuo {
+		0%, 100% {
+			transform: translateY(0) scale(1); 
+		}
+		25% {
+			transform: translateX(-6px) scale(1..7); 
+		}
+		50% {
+			transform: translateX(6px);
 		}
 	}
 
@@ -2053,7 +2078,6 @@ nav:focus {
 	}
 	
 
-
 /* PORTFOLIO.HTML CSS */
 	.fig-img, .vs-img {
 		width: 49%;
@@ -2061,12 +2085,12 @@ nav:focus {
 	}
 
 	.fig-img {
-		animation: floatAnimation 2.3s ease-in-out infinite alternate; /* Apply animation */
+		animation: floatAnimation 2.3s ease-in-out infinite alternate; 
 		position: relative;
 	}
 
 	.vs-img {
-		animation: floatAnimation 2.3s ease-in-out infinite alternate; /* Apply animation */
+		animation: floatAnimation 2.3s ease-in-out infinite alternate; 
 		animation-delay: .5s;
 		position: absolute;
 		width: 40%;
