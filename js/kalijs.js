@@ -5,141 +5,203 @@ function toggleAudioWave() {
     const audio = document.getElementById("waveAudio");
     const audioImg = document.querySelector(".waves-img");
     if (playing) {
-        audio.pause(); // pause
-        audio.currentTime = 0; // reset
-        audioImg.classList.remove("playing");
+        audio.pause();
+        audio.currentTime = 0;
+        audioImg.src = "images/play-beach.png"; // back to play
     } else {
-        audio.play(); // play
-        audioImg.classList.add("playing");
+        audio.play();
+        audioImg.src = "images/pause-beach.png"; // switch to pause
     }
-    playing = !playing; 
+    playing = !playing;
 }
-
 
 let playingF = false; 
 function toggleAudioForest() {
     const audio = document.getElementById("forestAudio");
     const audioImg2 = document.querySelector(".for-img");
     if (playingF) {
-        audio.pause(); // pause
-        audio.currentTime = 0; // reset
-        audioImg2.classList.remove("playing");
+        audio.pause();
+        audio.currentTime = 0;
+        audioImg2.src = "images/play-forest.png"; // back to play
     } else {
-        audio.play(); // play
-        audioImg2.classList.add("playing");
+        audio.play();
+        audioImg2.src = "images/pause-forest.png"; // switch to pause
     }
-    playingF = !playingF; 
+    playingF = !playingF;
 }
 
-// iterating: cheeky footer
-document.addEventListener("DOMContentLoaded", () => {
-    const phrases = [
-        "Your time is appreciated",
-        "You desrve the $7 coffee you bought today (by the way)",
-        "Affirmation of the day: I will not make a git commit at 2am",
-        "Lurking in the footer...heyyy",
-        "I'm watching Severence, its good",
-        'This is one of my <a href="https://www.entirestudios.com/?gad_source=1&gclid=Cj0KCQiAhvK8BhDfARIsABsPy4hFONDz3HkcICNqKnuTMdTOIMQzQLq4hlIKnn13TDrpIlsysV8XXY0aAoAgEALw_wcB" target="_blank">fav websites</a> right now.`',
-        "Hiiiiiiii iiiiii",
-        "Has anyone caught on",
-        "You deserve a sweet treat today",
-        "Thanks for stopping by, I had fun making this",
-        "Don't look at the names of my git commits",
-        'Adoring this <a href="https://eminente.art/">website</a>" at the moment',
-        "It's cold in Michigan right now"
-    ];
-
-    let index = 0;
-    const textElement = document.getElementById("rotating-text");
-
-    function changePhrase() {
-        textElement.style.opacity = "0";
-
-        setTimeout(() => {
-            index = (index + 1) % phrases.length;
-            textElement.textContent = phrases[index];
-            textElement.style.opacity = "1";
-        }, 1000); 
-    }
-    //  3 minutes = (180,000 ms)
-    setInterval(changePhrase, 2000);
-    textElement.style.transition = "opacity 1s ease-in-out";
-});
-
-// jump to projects function:
-let mouse = document.getElementById("mouse-click");
-mouse.addEventListener("click", function() {
-    let targetDiv = document.querySelector(".new-project-index-wrap");
-    targetDiv.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-
-mouse.addEventListener("mouseover", function() {
-    let textChange = document.querySelector(".mouse-subtext");
-    textChange.style.opacity = ".6"; 
-});
-
-mouse.addEventListener("mouseout", function() {
-    let textChange = document.querySelector(".mouse-subtext");
-    textChange.style.opacity = ""; 
+// jump to work
+document.addEventListener('DOMContentLoaded', function () {
+  const workJump = document.querySelector('.work-jump');
+  if (workJump) {
+    workJump.addEventListener('click', function (e) {
+      e.preventDefault(); // Stop the link from navigating
+      document.querySelector('.project-grid-wrap').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  }
 });
 
 
-// INDEX CARD FAN:
+
+// projects jumping:
+document.querySelectorAll('.left-col a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const section = document.querySelector(this.getAttribute('href'));
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// footer:
 document.addEventListener("DOMContentLoaded", function () {
-    const fanWrap = document.querySelector(".fan-wrap");
-    const fans = document.querySelectorAll(".sticker");
-    const fanCenter = document.querySelector(".fan-center");
+    const grassImage = document.querySelector(".grass-wrap img");
+    const footerText = document.querySelector(".footer-text");
 
-    function updateFanPositions() {
-        const centerWidth = fanCenter.offsetWidth; // Get the width of the fan-center
-        const scaleFactor = centerWidth * 0.6; // Adjust scaling factor based on image size
+    grassImage.addEventListener("mouseenter", () => {
+        footerText.classList.add("visible");
+        console.log("WORKED");
+    });
 
-        fans.forEach(fan => {
-            fan.style.opacity = "0";
-            fan.style.transform = "translateX(0) rotate(0deg)";
-        });
+    grassImage.addEventListener("mouseleave", () => {
+        footerText.classList.remove("visible");
+    });
+});
 
-        fanWrap.addEventListener("mouseenter", () => {
-            fanCenter.style.transform = "translateY(-3px)";
-            fanCenter.style.animation = "none";
+// progress bar:
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    console.log("PROGRESS BAAR");
+    document.getElementById('scroll-progress-bar').style.width = scrollPercent + '%';
+  });
 
-            fans.forEach((fan, index) => {
-                setTimeout(() => {
-                    fan.style.opacity = "1";
-                    fan.style.transition = "transform 0.4s ease-out, opacity 0.4s ease-in";
 
-                    switch (index) {
-                        case 0:
-                            fan.style.transform = `rotate(-10deg) translateX(${-scaleFactor * 1.5}px) translateY(${scaleFactor * 0.8}px)`;
-                            break;
-                        case 1:
-                            fan.style.transform = `rotate(10deg) translateX(${-scaleFactor}px) translateY(${-scaleFactor * 0.4}px)`;
-                            break;
-                        case 2:
-                            fan.style.transform = `rotate(12deg) translateX(${scaleFactor}px) translateY(${-scaleFactor * 0.35}px)`;
-                            break;
-                        case 3:
-                            fan.style.transform = `rotate(8deg) translateX(${scaleFactor * 1.3}px) translateY(${scaleFactor * 0.9}px)`;
-                            break;
-                    }
-                }, index * 40);
-            });
-        });
+// loading:
+window.addEventListener('load', function () {
+  const loader = document.getElementById('loading-screen');
+  if (loader) {
+    setTimeout(() => {
+      loader.classList.add('fade-out');
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 800); 
+    }, 800); 
+  }
+});
 
-        fanWrap.addEventListener("mouseleave", () => {
-            fanCenter.style.transform = "translateY(0)";
+document.addEventListener('DOMContentLoaded', function () {
+  const dateElement = document.querySelector('.loading-date');
 
-            fans.forEach((fan, index) => {
-                setTimeout(() => {
-                    fan.style.opacity = "0";
-                    fan.style.transform = "translateX(0) rotate(0deg)";
-                    fanCenter.style.opacity = "1";
-                    fanCenter.style.animation = "bounce 3s ease-in-out infinite";
-                }, index * 62);
-            });
-        });
+  const monthNames = [
+    "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
+    "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
+  ];
+
+  const currentDate = new Date();
+  const month = monthNames[currentDate.getMonth()];
+  const day = currentDate.getDate();
+  const year = currentDate.getFullYear();
+
+  // Use backticks for template literals here:
+  const formattedDate = `${month} ${day} YEAR ${year}`;
+
+  if (dateElement) {
+    dateElement.textContent = formattedDate;
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const videoElement = document.querySelector('.loading-vid');
+  const sourceElement = videoElement.querySelector('source');
+
+  let currentIndex = sessionStorage.getItem('natureIndex');
+  if (!currentIndex) currentIndex = 1;
+  else currentIndex = parseInt(currentIndex, 10);
+
+  // Set video src
+  sourceElement.src = `video/nature${currentIndex}.mp4`;
+  videoElement.load();
+
+  // Increment index for next load
+  currentIndex++;
+  if (currentIndex > 7) currentIndex = 1;
+
+  // Store updated index for next reload
+  sessionStorage.setItem('natureIndex', currentIndex);
+});
+
+
+
+// popup:
+document.querySelectorAll('.media-flex').forEach(mediaFlex => {
+	const icon = mediaFlex.querySelector('.text-media-img');
+	const popupId = mediaFlex.dataset.popup;
+	const popup = document.querySelector(`.${popupId}`);
+	let isOpen = false;
+
+	mediaFlex.addEventListener('click', () => {
+		// Remove any existing spin classes first
+		icon.classList.remove('spin-right', 'spin-left');
+
+		isOpen = !isOpen;
+
+		icon.classList.add(isOpen ? 'spin-right' : 'spin-left');
+
+		// Swap icon
+		icon.src = isOpen ? 'images/pink-minus.png' : 'images/pink-plus.png';
+
+		// Toggle popup visibility
+		if (isOpen) {
+			popup.classList.add('active');
+			mediaFlex.classList.add('active');
+		} else {
+			popup.classList.remove('active');
+			mediaFlex.classList.remove('active');
+		}
+	});
+});
+
+
+
+// about bg:
+const experienceSections = document.querySelectorAll('.bg-scroll');
+
+const observerOptions = {
+  threshold: 0.5 
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.body.style.backgroundColor = '#2B2E2E'; 
+    } else {
+      document.body.style.backgroundColor = ''; // default color
     }
+  });
+}, observerOptions);
 
-    updateFanPositions(); // Run once on load
-    window.addEventListener("resize", updateFanPositions); // Update when resizing
+experienceSections.forEach(section => observer.observe(section));
+
+
+// back to top:
+document.querySelectorAll('.top-button, .top-button-white').forEach(button => {
+  button.addEventListener('click', function(e) {
+    e.preventDefault(); 
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+window.addEventListener("load", () => {
+  const sticker = document.querySelector(".pixel-sticker");
+  if (sticker) {
+    sticker.classList.add("rotate-on-load");
+  }
 });

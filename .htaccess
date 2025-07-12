@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Protected Area"
-AuthUserFile /Users/kalifrancisco/Desktop/Me/website/kalis-portfolio/.htpasswd
-Require valid-user
