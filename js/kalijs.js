@@ -88,8 +88,8 @@ window.addEventListener('load', function () {
       loader.classList.add('fade-out');
       setTimeout(() => {
         loader.style.display = 'none';
-      }, 800); 
-    }, 800); 
+      }, 500); 
+    }, 500); 
   }
 });
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const year = currentDate.getFullYear();
 
   // Use backticks for template literals here:
-  const formattedDate = `${month} ${day} YEAR ${year}`;
+  const formattedDate = `${month} ${day}, YEAR ${year}`;
 
   if (dateElement) {
     dateElement.textContent = formattedDate;

@@ -187,7 +187,7 @@ section p {
 }
 
 .left-col a:nth-child(1) {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .project-label {
@@ -218,8 +218,8 @@ section p {
 }
 
 .right-col {
-    width: 80%;
-    margin-left: 10rem;
+    width: 90%;
+    margin-left: 6rem;
 }
 
 .about-flex {
