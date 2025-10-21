@@ -1,4 +1,3 @@
-
 // etc. page audio function:
 let playing = false; 
 function toggleAudioWave() {
@@ -25,35 +24,59 @@ function toggleAudioForest() {
         audioImg2.src = "images/play-forest.png"; // back to play
     } else {
         audio.play();
-        audioImg2.src = "images/pause-forest.png"; // switch to pause
+        audioImg2.src = "images/pause-forest.png"; 
     }
     playingF = !playingF;
 }
 
 // jump to work
-document.addEventListener('DOMContentLoaded', function () {
-  const workJump = document.querySelector('.work-jump');
-  if (workJump) {
-    workJump.addEventListener('click', function (e) {
-      e.preventDefault(); // Stop the link from navigating
-      document.querySelector('.project-grid-wrap').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".left-col-proj-index-wrap");
+  const projects = document.querySelectorAll(".project-wrap");
+
+  projects.forEach(proj => proj.classList.remove("active"));
+  const defaultProject = document.querySelector('.project-wrap[data-id="neuraflash"]');
+  if (defaultProject) defaultProject.classList.add("active");
+  const defaultLink = document.querySelector('.left-col-proj-index-wrap[data-target="neuraflash"] h3');
+  if (defaultLink) defaultLink.classList.add("active");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      const target = link.getAttribute("data-target");
+      if (!target) return;
+
+      projects.forEach(proj => {
+        proj.classList.remove("active");
+        if (proj.getAttribute("data-id") === target) {
+          proj.classList.add("active");
+          console.log("PROJECT", target);
+
+          proj.style.pointerEvents = 'auto';
+        }
       });
+
+      links.forEach(l => {
+        const h3 = l.querySelector("h3");
+        if (h3) h3.classList.remove("active");
+      });
+
+      const clickedH3 = link.querySelector("h3");
+      if (clickedH3) clickedH3.classList.add("active");
+
+      if (target === "neuraflash") {
+        console.log("NF CLICKED");
+        const nf = document.querySelector('.project-wrap[data-id="neuraflash"]');
+        nf.style.opacity = '1';
+        nf.style.transform = 'translateY(0)';
+      }
     });
-  }
-});
-
-
-
-// projects jumping:
-document.querySelectorAll('.left-col a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const section = document.querySelector(this.getAttribute('href'));
-    section.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+
+
+
+
 
 // footer:
 document.addEventListener("DOMContentLoaded", function () {
@@ -107,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const year = currentDate.getFullYear();
 
   // Use backticks for template literals here:
-  const formattedDate = `${month} ${day}, YEAR ${year}`;
+  const formattedDate = `${month} ${day} / ${year}`;
 
   if (dateElement) {
     dateElement.textContent = formattedDate;
@@ -177,7 +200,7 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      document.body.style.backgroundColor = '#2B2E2E'; 
+      document.body.style.backgroundColor = '#171818'; 
     } else {
       document.body.style.backgroundColor = ''; // default color
     }
@@ -198,10 +221,21 @@ document.querySelectorAll('.top-button, .top-button-white').forEach(button => {
   });
 });
 
+// index event:
+document.addEventListener("DOMContentLoaded", () => {
+  const infoWrap = document.querySelector(".info-wrap");
+  const link = infoWrap.querySelector("a");
+  const img = infoWrap.querySelector(".info-pic");
 
-window.addEventListener("load", () => {
-  const sticker = document.querySelector(".pixel-sticker");
-  if (sticker) {
-    sticker.classList.add("rotate-on-load");
-  }
+  infoWrap.addEventListener("mouseenter", () => {
+    link.style.color = "#CB208C";
+    img.style.opacity = "0.8";
+    link.style.fontFamily = "Helvetica Now Text Medium";
+  });
+
+  infoWrap.addEventListener("mouseleave", () => {
+    link.style.color = "";  
+    img.style.opacity = "1"; 
+    link.style.fontFamily = "Helvetica Now Text Regular";
+  });
 });

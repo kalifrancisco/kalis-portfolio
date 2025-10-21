@@ -21,212 +21,146 @@
 
 <body>
     <div id="scroll-progress-bar"></div>
-	<div id="loading-screen" class="loading">
-		<div class="load-vid-wrap">
-		<div class="load-wrap">
-			<p class="loading-date">HI</p>
-			<p class="kali-web">loading kali's web...</p>
-		</div>
-		<div class="loading-vid-container">
-			<video class="loading-vid" autoplay muted loop playsinline> 
-			<source src="video/nature7.mp4" type="video/mp4">
-			</video>
-		</div>
-		</div>
-	</div>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header class="head">
 	<!-- nav bar: -->
-	<nav class="navfixed">
-		<div class="logo-wrap">
-			<img src="images/pink-dot.png">
-			<a href="index.html" class="fullname-logo">Kali Francisco</a>
-		</div> 
+    <nav class="navfixed">
+		<div class="nav-title-wrap">
+			<a href="index.html" class="fullname-logo">Kali Francisco ⋆˚𓈒𓏸</a>
+			<p>UX Designer</p>
+		</div>
         <ul class="nav_links">
-            <li class="navitem bold"><a href="index.html">Work</a></li>
-			<li class="navitem"><a href="scraps.html">Scraps</a></li>
-			<li class="navitem"><a href="about.html">About</a></li>
+			<li class="navitem"><a href="scraps.html">Play</a></li>
+			<div class="info-wrap">
+				<li class="navitem"><a href="about.html">Info</a></li>
+				<img class="info-pic" src="images/info-pic.png">
+			</div>
 		</ul>
 	</nav>
 	</header>
 
-	<main tabindex="0">
-       <div class="project-wrap">
-            <video class="project-frame" autoplay muted loop playsinline> 
-                <source src="video/MINDMAPCLOUDS_ANIMATION.mp4" type="video/mp4">
-            </video>
-		</div>
-       <div class="col-project-flex">
-            <div class="left-col">
-                <a href="#about">ABOUT</a>
-                <a href="#overview">OVERVIEW</a>
-                <a href="#challenge">CHALLENGE + GOAL</a>
-                <a href="#research">RESEARCH</a>
-                <a href="#ideation">IDEATION</a>
-                <a href="#motion">MOTION</a>
-                <a href="#final-design">FINAL DESIGNS</a>
-                <a href="#future">FUTURE</a>
-                <div class="section-divider"></div>
-                <div class="section-divider"></div>
-                <a class="top-button-white"><span class="arrow">⇧</span>  BACK TO TOP</a>
-            </div>
-            <div class="right-col view">
-                <section id="about">
-                    <h1 class="project-h1">Mindmap</h1>
-                    <div class="about-flex">
-                        <p class="project-label">Web app audio visualizer using digital media</p>
-                        <div class="project-metadata">
-                            <div class="meta-flex">
-                                <p class="meta-label">TIMELINE</p>
-                                <p class="project-label">May 2025<br>(2 weeks)</p>
-                            </div>
-                            <div class="meta-flex">
-                                <p class="meta-label">ROLE</p>
-                                <p class="project-label">Solo Product Designer</p>
-                            </div>
-                            <div class="meta-flex">
-                                <p class="meta-label">TOOLS</p>
-                                <p class="project-label">Figma,<br> Adobe After Effects</p>
-                            </div>
-                            <div class="meta-flex">
-                                <p class="meta-label">SKILLS</p>
-                                <p class="project-label">Interaction Design,<br> Product Design,<br> Conceptual Design</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="overview">
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>OVERVIEW</h3>
-                    </div> 
-                    <p>Mindmap brings a tangible meaning to intangible memories by allowing people to visualize personal media (photos, videos, text, links, etc.) through a sound associated with those memories.</p>
-                    <video autoplay muted loop playsinline style="width: 100%; margin-top: 1rem;"> 
-                        <source src="video/mm-tile-transparent.mp4" type="video/mp4">
-                    </video>
-                </section>
-
-                <section id="challenge">
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>THE CHALLENGE</h3>
-                    </div> 
-                    <p>The <span class="bold">fear of forgetting</span> drives much of our experiences with media: capturing photos to remember an event, journaling to capture feelings, creating a playlist to commemorate a special occasion. Music, however, has a unique relationship with memory.<br><br> Songs engage both the left and right hemispheres of the brain, strengthening the neural pathways that link sound with memory and emotion.</p>
-                    <img class="sec-img" src="images/music-brain-map.png">
-                    <p class="research">See <a class="research-link" href="https://pscresearch.faculty.ucdavis.edu/wp-content/uploads/sites/112/2014/11/Janata-music-evoked-memories.pdf" target="_blank" rel="noopener noreferrer">"The Neural Architecture of Music-Evoked Autobiographical Memories"</a> study for more details</p>
-                    <div class="section-divider"></div>
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>THE GOAL</h3>
-                    </div>
-                    <p> <span class="bold">Enable users to create meaningful, memory-driven audio visualizations by integrating personal media into the listening experience.</span></p> 
-                    <p>An audio visualizer is a multi-dimensional experience engaging sound, sight, and the environment. The design approach needed to be intuitive, informational, and carefully abstracted, to ensure users wouldn't experience mental fatigue creating their Mindmap.</p>
-                </section>
-                <section id="research">
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>RESEARCH</h3>
-                    </div> 
-                    <p>Drawing inspiration from the first ever music visualizer, the forgotten <a href="https://en.wikipedia.org/wiki/Atari_Video_Music" target="_blank" rel="noopener noreferrer"><span class="project-link">Atari Video Music (1977)</span></a>, I wanted the UI to nod to the pioneering audio equipment.<br><br>
-                    Atari Video Music's interface affords a playful, generalized way to control the the pastel pixelated shapes seen on the TV.</p>
-                    <img class="sec-img" src="images/atari-exp.png">
-                    <p>Growing up, my first exciting experience with a computer was toying with the iconic iTunes song visualizers. While extremely innovative at the time, they lacked the memory-driven way to connect with music that is so central to the listening experience.</p>
-                    <img class="sec-img" src="images/itunes-inspo.png">
-                    <div class="section-divider"></div>
-                    <h3>RESEARCH FINDINGS</h3>
-                    <p>Both experiences, 30 years apart, access the <span class="bold">same dimensionality</span> of audio-to-visual experience.<br><br>I realized I wanted to blend the vintage simplicity of the Atari interface with the fluidity of the iTunes visualizer to create a <span class="bold">more personal and memory-rich experience.</span></p>
-                </section>
-                <section id="ideation">
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>IDEATION</h3>
-                    </div> 
-                    <p> Much of the build relies on the user uploading their media and selecting a song. To help users curate an authentic experience, the <span class="bold">motion and interaction design</span> of the <span class="bold">user adoption</span> needed to be clean.</p>
-                    <p>I decided to construct my lofi wireframes in an animation-style <span class="bold">storyboard</span> to center the entire experience around motion and interaction.</p>
-                    <img class="sec-img" src="images/storyboard.png">
-                    <div class="section-divider"></div>
-                    <p>The color palette design elements, and design UI building blocks draw inspiration from the design of early immersive audio experiences (speaker baskets, cones, and spiders translate nicely to UI buttons).</p>
-                    <img class="sec-img" src="images/inspo-assets.png">
-                    <img class="sec-img" src="images/color-logo.png">
-                </section>
-                <section id="motion">
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>MOTION</h3>
-                    </div>
-                    <p>Audio visualizers are inherently fluid, so the process of creating a Mindmap should feel just as smooth, natural, and intentional. Taking note from <a href="https://base.uber.com/6d2425e9f/p/116184-motion" target="_blank" rel="noopener noreferrer"><span class="link-standard">Uber's motion design playbook</span></a>, each UI animation follows a cubic bezier to emphasize easing to allow movement to "mimic motion in the real world".</p>
-                    <img class="sec-img" src="images/beizer.png">
-                    <video class="project-frame sec-img" autoplay muted loop playsinline> 
-                        <source src="video/bezier.mp4" type="video/mp4">
-                    </video>
-                    <video class="project-frame sec-img" autoplay muted loop playsinline> 
-                        <source src="video/media-mm.mp4" type="video/mp4">
-                    </video>
-                </section>
-                <section id="final-design">
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>FINAL DESIGNS</h3>
-                    </div> 
-                    <p>Enjoy the final implementation:</p>
-                        <div class="project-wrap">
-                            <video class="project-frame dont-cover" autoplay muted loop playsinline style="height: 385px; margin-top: 1rem;"> 
-                                <source src="video/MINDMAP-animation-final.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                </section>
-                 <section id="future">
-                    <div class="section-wrap">
-                        <img src="images/pink-dot.png">
-                        <h3>FUTURE</h3>
-                    </div> 
-                    <p>Mindmap helped me learn the amount of conceptual work that goes into motion and interaction design for <span class="bold">consumer-facing products</span>. In the future, I hope to develop Mindmap into a 3D visualization experience using Three.js.<br><br> That's all for now, cheers!</p>
-                    <img class="end-small-img" src="images/end-small-img.png">
-                </section>
-            </div>
+	<main class="project-main" tabindex="0">
+        <div class="project-wrap-2">
+			<img src="images/mindmap-laptop.png">
        </div>
-
-       <div class="project-outer-wrap">
-            <div class="next-project-wrap">
-                <a class="button-next" href="collage.html">
-                NEXT PROJECT
-                </a>
-                 <div class="project-wrap">
-					<video class="project-frame" autoplay muted loop playsinline> 
-						<source src="video/collage-animation-newcolors.mp4" type="video/mp4">
-					</video>
-					<div class="project-description">
-						<h3 class="project-label">Collage / Product Designer (Founding Team) / 2024 - 2025</h3>
-						<p class="project-label">Reached 15,000+ students nationwide; VC interest from Soma Capital, Bullmont, Reach Capital</p>
-					</div>
-				</div>
+        <div class="col-project-flex">
+             <div class="nf-title-wrap">
+                    <div class="nf-sub-wrap">
+                        <h1 class="project-h1">Mindmap</h1>
+                        <p class="project-p">Web app audio visualizer using digital media</p>
+                    </div>
+                    <div class="password-wrap">
+                        <a href="#final-design" style="text-decoration: none; color: inherit;">
+                        <div class="primary-cta">Jump to final designs</div></a>
+                    </div>
+                </div>
+                <div class="about-flex">
+                    <div class="project-metadata">
+                        <div class="meta-flex">
+                            <p class="meta-label">TIMELINE</p>
+                            <p class="project-label">May 2025</p>
+                        </div>
+                        <div class="meta-flex">
+                            <p class="meta-label">ROLE</p>
+                            <p class="project-label">Solo UX Designer</p>
+                        </div>
+                        <div class="meta-flex">
+                            <p class="meta-label">TOOLS</p>
+                            <p class="project-label">Figma,<br> Adobe After Effects</p>
+                        </div>
+                        <div class="meta-flex">
+                            <p class="meta-label">SKILLS</p>
+                            <p class="project-label">Interaction Design,<br> Product Design,<br> Conceptual Design</p>
+                        </div>
+                </div>
             </div>
+            <section id="problem">
+                <h3>The Problem</h3>
+                <p>Holding onto memories is a highly complex process. People simple need a way to anchor vivid experiences to enrich memories.</p>
+            </section>
+            <section id="outcome">
+                <h3>Outcome</h3>
+                <p>Mindmap — an audio visualizer for digital media to solidfy memories with sound association 🎧</p>
+            </section>
+
+            <section id="challenge">
+                <h3>Research</h3>
+                <p>The fear of forgetting drives much of our experiences with media: capturing photos to remember an event, journaling to capture feelings, creating a playlist to commemorate a special occasion.<br><br>Music, however, has a unique relationship with memory.</p>
+                <img class="sec-img" src="images/music-brain-map.png">
+                <p class="research">See <a class="research-link" href="https://pscresearch.faculty.ucdavis.edu/wp-content/uploads/sites/112/2014/11/Janata-music-evoked-memories.pdf" target="_blank" rel="noopener noreferrer">"The Neural Architecture of Music-Evoked Autobiographical Memories"</a> study for more details</p>
+            </section>
+            <section id="goal">
+                <h3>The Goal</h3>
+                <p> <span class="bold">Enable users to create meaningful, memory-driven audio visualizations by integrating personal media into the listening experience.</span></p> 
+                <p>An audio visualizer is a multi-dimensional experience engaging sound, sight, and the environment. The design approach needed to be intuitive, informational, and carefully abstracted, to ensure users wouldn't experience mental fatigue creating their Mindmap.</p>
+            </section>
+            <section id="ideation">
+                <h3>Ideation</h3>
+                <p>To help users curate an authentic experience, the <span class="bold">motion and interaction design</span> of the <span class="bold">user adoption</span> needed to be clean.</p>
+                <p>I decided to create my wireframes in an animation-style <span class="bold">storyboard</span> to prioritize crisp motion and interaction design.</p>
+                <img class="sec-img" src="images/storyboard.png">
+            </section>
+            <section>
+                <h3>Visual Identity</h3>
+                <p>The color palette design elements, and design UI building blocks draw inspiration from the design of early immersive audio experiences (speaker baskets, cones, and spiders translate nicely to UI buttons).</p>
+                <img class="sec-img" src="images/inspo-assets.png">
+                <img class="sec-img" src="images/color-logo.png">
+                 <video autoplay muted loop playsinline style="width: 100%; margin-top: 1rem;"> 
+                    <source src="video/mm-tile-transparent.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section id="motion">
+                <h3>Motion Design</h3>
+                <p>Audio visualizers are visually fluid and natural looking. Taking note from <a href="https://base.uber.com/6d2425e9f/p/116184-motion" target="_blank" rel="noopener noreferrer"><span class="link-standard">Uber's motion design playbook</span></a>, each UI animation follows a cubic bezier to emphasize easing to allow movement to "mimic motion in the real world."</p>
+                <img class="sec-img" src="images/beizer.png">
+                <video class="smooth-vid" autoplay muted loop playsinline> 
+                    <source src="video/media-mm.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section id="final-design">
+                <h3>Final Designs</h3>
+                    <video class="project-frame" autoplay muted loop playsinline> 
+						<source src="video/mindmap-index.mp4" type="video/mp4">
+					</video>
+            </section>
+                <section id="future">
+                <h3>Next Steps</h3>
+                <p>Mindmap helped me learn the amount of conceptual work that goes into motion and interaction design for consumer-facing products. In the future, I hope to develop Mindmap into a 3D visualization experience using Three.js.<br><br>That's all for now, cheers!</p>
+            </section>
         </div>
+       </div>
 	</main>
 
-    <footer tabindex="0">
+     <footer tabindex="0">
 		<div class="foot-wrap">
 			<div class="footer-flex">
-				<p class="rights">@ Kali Francisco 2025</p>
-				<ul class="index-socials-wrap-footer">
-					<li><a  target="_blank" href="https://www.linkedin.com/in/kalifrancisco/">LinkedIn</a></li>
-					<li><a  target="_blank" href="https://www.are.na/kali-francisco/channels">Are.na</a></li>
-					<li><a href="docs/kalifranciscoresume.pdf" target="_blank">Resume</a></li>
-					<li><a  target="_blank" href="https://x.com/kaliiiiif">X</a></li>
-				</ul>
-				<div class="notes-footer">
-					<p class="rights">Notes on type:<br><br><span class="light">Helvetica Now<br><br>Literata</span></p>
-					<p class="rights">Notes on dev:<br><br><span class="light">Last updated July 12, 2025</span></p>
+				<div class="update-div">
+					<p class="rights">© 2025</p>
+				</div>
+				<div class="social-footer-wrap">
+					<div class="social-icon-wrap">
+						<a href="https://www.linkedin.com/in/kalifrancisco/" target="_blank">
+							<img src="images/linkedin-in.png" alt="LinkedIn Icon" />
+						</a>
+						<a href="https://x.com/kaliiiiif" target="_blank">
+							<img src="images/x-icon.png" alt="X Icon" />
+						</a>
+						<a href="https://www.are.na/kali-francisco/channels" target="_blank">
+							<img src="images/arena-icon.png" alt="Arena Icon" />
+						</a>
+						<a href="docs/kalifranciscoresume.pdf" target="_blank">
+							<img src="images/resume-icon.png" alt="Resume Icon" />
+						</a>
+            		</div>
 				</div>
 			</div>
 		</div>
-		<div class="bootom-foot">
-			<p class="bottom-footer-p">This website is <span class="pink">designed and coded by me</span> and is constantly evolving. Check back frequently for updates 𓇼 ⋆.˚</p>
-			<p class="bottom-footer-p top-button"><span class="arrow">⇧</span> BACK TO TOP</p>
+		<div class="bottom-foot">
+			<p class="bottom-footer-p top-button"><span class="arrow">⇧</span> Back to top</p>
+			<p class="bottom-footer-p">site <span class="pink">coded by me</span> and constantly evolving</p>
 		</div>
 	</footer>
-		
-	</footer>
+
 	<script src='js/kalijs.js'></script>
 	<script src='js/footer.js'></script>
 	</main>
