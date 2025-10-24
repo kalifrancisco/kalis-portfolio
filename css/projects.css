@@ -13,10 +13,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 4px;
+  height: 10px;
   width: 0%;
-  background: #E8ACD2; 
-  z-index: 9999;
+    background: linear-gradient(90deg, rgba(164, 164, 164, 0.411), rgba(88, 89, 89, 0.4));
+  backdrop-filter: blur(6px) saturate(150%);
+  -webkit-backdrop-filter: blur(6px) saturate(150%);
+  border-radius: 0 2px 2px 0;
+  z-index: 9999;  z-index: 9999;
   transition: width 0.1s ease-out;
 }
 

@@ -29,16 +29,24 @@ function toggleAudioForest() {
     playingF = !playingF;
 }
 
-// jump to work
+// jump to work event:
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".left-col-proj-index-wrap");
   const projects = document.querySelectorAll(".project-wrap");
 
+  // reset ALL projects
   projects.forEach(proj => proj.classList.remove("active"));
+
   const defaultProject = document.querySelector('.project-wrap[data-id="neuraflash"]');
   if (defaultProject) defaultProject.classList.add("active");
-  const defaultLink = document.querySelector('.left-col-proj-index-wrap[data-target="neuraflash"] h3');
-  if (defaultLink) defaultLink.classList.add("active");
+
+  const defaultLink = document.querySelector('.left-col-proj-index-wrap[data-target="neuraflash"]');
+  if (defaultLink) {
+    const h3 = defaultLink.querySelector("h3");
+    const p = defaultLink.querySelector("p");
+    if (h3) h3.classList.add("active");
+    if (p) p.classList.add("active");
+  }
 
   links.forEach(link => {
     link.addEventListener("click", () => {
@@ -49,32 +57,32 @@ document.addEventListener("DOMContentLoaded", () => {
         proj.classList.remove("active");
         if (proj.getAttribute("data-id") === target) {
           proj.classList.add("active");
-          console.log("PROJECT", target);
-
           proj.style.pointerEvents = 'auto';
         }
       });
 
       links.forEach(l => {
         const h3 = l.querySelector("h3");
+        const p = l.querySelector("p");
         if (h3) h3.classList.remove("active");
+        if (p) p.classList.remove("active");
       });
 
       const clickedH3 = link.querySelector("h3");
+      const clickedP = link.querySelector("p");
       if (clickedH3) clickedH3.classList.add("active");
+      if (clickedP) clickedP.classList.add("active");
 
       if (target === "neuraflash") {
-        console.log("NF CLICKED");
         const nf = document.querySelector('.project-wrap[data-id="neuraflash"]');
-        nf.style.opacity = '1';
-        nf.style.transform = 'translateY(0)';
+        if (nf) {
+          nf.style.opacity = '1';
+          nf.style.transform = 'translateY(0)';
+        }
       }
     });
   });
 });
-
-
-
 
 
 
@@ -129,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const day = currentDate.getDate();
   const year = currentDate.getFullYear();
 
-  // Use backticks for template literals here:
   const formattedDate = `${month} ${day} / ${year}`;
 
   if (dateElement) {
@@ -226,16 +233,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const infoWrap = document.querySelector(".info-wrap");
   const link = infoWrap.querySelector("a");
   const img = infoWrap.querySelector(".info-pic");
+  const currentPage = window.location.pathname.split("/").pop();
 
-  infoWrap.addEventListener("mouseenter", () => {
-    link.style.color = "#CB208C";
-    img.style.opacity = "0.8";
+  //  curr logic:
+  if (currentPage === "about.html") {
+    link.classList.add("current");
+    img.style.opacity = "1";
+  }
+
+  infoWrap.addEventListener("mouseenter", () => { //hover logic
+    link.style.color = "#2C2E2E";
+    img.style.opacity = "1";
     link.style.fontFamily = "Helvetica Now Text Medium";
   });
 
   infoWrap.addEventListener("mouseleave", () => {
-    link.style.color = "";  
-    img.style.opacity = "1"; 
-    link.style.fontFamily = "Helvetica Now Text Regular";
+    if (!link.classList.contains("current")) {
+      link.style.color = "";
+      img.style.opacity = "0.7";
+      link.style.fontFamily = "Helvetica Now Text Regular";
+    }
+  });
+
+  img.addEventListener("click", () => {
+    window.location.href = link.href;
   });
 });
