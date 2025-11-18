@@ -7,6 +7,16 @@ main, header {
 	padding: 0;
 }
 
+::selection {
+  background: #FE6EC9; 
+  color: #ffffff;     
+}
+
+::-moz-selection {
+  background: #FE6EC9;
+  color: #ffffff;
+}
+
 @font-face {
     font-family: 'Inconsolata Extra Light';
     src: url('../Inconsolata/static/Inconsolata-ExtraLight.ttf');
@@ -210,7 +220,7 @@ main {
 .nav-title-wrap p {
 	color: #626262;
 	font-family: "Helvetica Now Text Regular";
-	font-size: 10px;
+	font-size: 11px;
 }
 
 .info-wrap {
@@ -222,6 +232,23 @@ main {
 
 .info-wrap li a {
 	font-family: "Helvetica Now Text Regular";
+}
+
+.workdesc-index-wrap {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-family: "Helvetica Now Text Medium";
+	color: #656565;
+	background-color: #dcdcdc;
+	border-radius: 6px;
+	padding: 2px 8px 2px 8px;
+	height: 24px;
+}
+
+.workdesc-index-wrap img {
+	width: 28px;
 }
 
 .info-wrap a,
@@ -240,9 +267,11 @@ main {
 	transition: transform 400ms ease-in-out;
 }
 
-.nav_links > .navitem:first-of-type {
-	padding-bottom: 8px;
+.nav_links > .navitem:first-of-type,
+.nav_links > .navitem:nth-of-type(2) {
+    padding-bottom: 10px;
 }
+
 
 .logo-wrap {
 	display: flex;
@@ -258,7 +287,7 @@ main {
 .fullname-logo {
 	font-family: "Helvetica Now Text Regular";
 	color: #2B2E2E;
-	font-size: 11px;
+	font-size: 13px;
 }
 
 .navfixed  {
@@ -339,6 +368,17 @@ footer {
 	font-size: 12px;
 }
 
+.email-cta a {
+  color: inherit;
+}
+
+.email-cta {
+	font-family: "Helvetica Now Text Regular";
+	font-size: 14px;
+	color: #b2b2b2;
+	text-decoration: underline;
+}
+
 .rights {
 	font-family: "Helvetica Now Text Regular";
 	font-size: 12px;
@@ -358,7 +398,7 @@ footer {
 .update-div {
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
+	gap: 8px;
 }
 
 
@@ -1147,11 +1187,11 @@ footer {
 	.update-div {
 		display: flex;
 		flex-direction: column;
-		gap: 6px;
+		gap: 8px;
 	}
 
 	.foot-wrap p {
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 	.hash-wrap p {
@@ -1215,7 +1255,8 @@ footer {
 	font-size: 14px;
 }
 
-.nav_links > .navitem:first-of-type {
+.nav_links > .navitem:first-of-type,
+.nav_links > .navitem:nth-of-type(2) {
 	padding-bottom: 0px;
 }
 
@@ -1241,7 +1282,7 @@ footer {
 }
 
 .fullname-logo {
-	font-size: 14px;
+	font-size: 18px;
 	transition: all 400ms ease-in-out;
 }
 
@@ -1261,11 +1302,11 @@ footer {
 }
 
 .nav-title-wrap p {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .nav-title-wrap {
-	gap: 6px;
+	gap: 8px;
 }
 
 .logo-wrap img {
@@ -1284,7 +1325,7 @@ footer {
 }
 
 .bottom-foot {
-	padding: 1.2% 3%;
+	padding: 3% 3%;
 }
 
 /* INDEX LAPTOP: */
@@ -1315,10 +1356,10 @@ footer {
 }
 
 .index-text {
-	font-size: 17px;
-	width: 95%;
+	font-size: 18px;
+	width: 100%;
 	position: inline-block;
-	line-height: 140%;
+	line-height: 130%;
 }
 
 .index-cols {
@@ -1339,8 +1380,8 @@ footer {
 }
 
 .social-icon-wrap img {
-    height: 18px;
-	padding: 6px;
+    height: 24px;
+	padding: 8px;
 }
 
 .elsewhere-wrap {
@@ -1366,7 +1407,7 @@ footer {
 }
 
 .footer-flex {
-	margin: 2% 3%;
+	margin: 3% 3%;
 }
 
 .nf-logo {
@@ -1397,7 +1438,7 @@ footer {
 }
 
 .proj-link-wrap p {
-	font-size: 11px;
+	font-size: 12px;
 	margin-bottom: 14px;
 	color: #C2C2C2;
 }
@@ -1564,13 +1605,15 @@ footer {
 /* SCRAP LAPTOP END */
 
 .rights, .bottom-footer-p {
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .top-button {
 	transition: all 0.3s ease;
 	padding: 12px 16px;
 	border-radius: 30px;
+	background-color: #242525;
+	font-size: 14px;
 }
 
 .top-button .arrow, .top-button-white .arrow {
@@ -1580,7 +1623,7 @@ footer {
 
 .top-button:hover {
 	color: #d0d0d0;
-	background-color: #2d2e2e;
+	background-color: #343535;
 }
 
 .top-button:hover .arrow, .top-button-white:hover .arrow {
@@ -1590,8 +1633,21 @@ footer {
 .bottom-foot {
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 0;
 	align-items: center;
+}
+
+.email-cta a {
+  color: inherit;
+}
+
+.email-cta {
+	font-size: 18px;
+	color: #b2b2b2;
+	transition: all 0.4s ease-in-out;
+}
+
+.email-cta:hover {
+	color: #FE6EC9;
 }
 
 /* LOADING LAPTOP: */
