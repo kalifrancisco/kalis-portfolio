@@ -122,6 +122,7 @@ main {
 	margin: 6% 4%;
 }
 
+
 /* LOADING CSS: */
 #loading-screen {
   position: fixed;
@@ -820,6 +821,10 @@ footer {
 	line-height: 140%;
 }
 
+.text-bold {
+	font-family: "Helvetica Now Text Bold";
+}
+
 .about-text-wrap {
 	display: flex;
 	flex-direction: column;
@@ -1008,6 +1013,7 @@ footer {
   max-height: 1000px; 
   opacity: 1;
   visibility: visible;
+  width: 100%;
 }
 
 
@@ -1662,6 +1668,16 @@ footer {
 /* ABOUT LAPTOP: */
 .about-p {
 	font-size: 14px;
+}
+
+.text-bold {
+	font-family: "Helvetica Now Text Bold";
+  	transition: all 200ms ease-in-out;
+}
+
+.text-bold:hover {
+	color: #FE6EC9;
+
 }
 
 .experiences-wrap {
