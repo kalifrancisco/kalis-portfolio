@@ -228,6 +228,20 @@ document.querySelectorAll('.top-button, .top-button-white').forEach(button => {
   });
 });
 
+// jump to project:
+document.querySelectorAll('.password-wrap a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+
 // index event:
 document.addEventListener("DOMContentLoaded", () => {
   const infoWrap = document.querySelector(".info-wrap");

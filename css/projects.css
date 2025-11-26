@@ -91,7 +91,7 @@
 .nf-sub-wrap {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
 }
 
 section {
@@ -100,10 +100,24 @@ section {
     gap: 12px;
 }
 
+.section-rows {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.section-rows > section {
+  flex: 1;
+}
+
+.section-rows section p {
+  width: 100%;
+}
+
 .about-flex {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .project-metadata {
@@ -126,14 +140,15 @@ section {
     display: flex;
     color: #2B2E2E;
     font-size: 13px;
-    font-family: "Helvetica Now Text Medium";
+    font-family: "Helvetica Now Text Regular";
 }
 
 section p {
-    color: #2B2E2E;
+    color: #797979;
     font-family: "Helvetica Now Text Regular";
     font-size: 13px;
     line-height: 130%;
+    width: 50%;
 }
 
 section h3 {
@@ -212,13 +227,13 @@ section {
 }
 
 .project-p {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .col-project-flex {
     margin-top: 4rem;
     gap: 6rem;
-    width: 60vw;
+    width: 70vw;
 }
 
  .left-col {
@@ -234,10 +249,6 @@ section {
 
 .project-label {
     width: 100%;
-}
-
-.nf-sub-wrap {
-    gap: 8px;
 }
 
 .project-metadata {
@@ -268,7 +279,7 @@ section {
 }
 
 .about-flex {
-    gap: 4rem;
+    gap: 8rem;
 }
 
 .meta-label {
@@ -277,7 +288,6 @@ section {
 
 section h3 {
     font-family: "Literata 24 Medium";
-    font-size: 18px;
     color: #2B2E2E;
 }
 
@@ -286,7 +296,7 @@ section p {
 }
 
 section h3 {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .section-wrap {
@@ -307,8 +317,9 @@ section h3 {
 }
 
 .research {
-    font-size: 14px;
-    width: 100%;
+    font-size: 12px;
+    line-height: 140%;
+    width: 30%;
 }
 
 .research-link:hover {

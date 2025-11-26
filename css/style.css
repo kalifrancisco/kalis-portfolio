@@ -635,7 +635,6 @@ footer {
 	display: flex;
 	background-color: #CFCFCF;
 	border-radius: 12px;
-	border: 1px solid #C7C7C7;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
@@ -644,7 +643,6 @@ footer {
 
 .project-frame-full {
   border-radius: 12px;
-  border: 1px solid #C7C7C7;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -652,7 +650,6 @@ footer {
 }
 
 .vid-border {
-	border: 1px solid #C7C7C7;
 	object-fit: cover;
 }
 
@@ -779,7 +776,6 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border-radius: 12px;
-	border: 1px solid #C7C7C7;
 	background-color: #CFCFCF;
 	overflow: hidden; 
 	flex: 1;
@@ -1434,10 +1430,6 @@ footer {
 	color: #2B2E2E;
 }
 
-.proj-left-wrap {
-	gap: 1.5rem;
-}
-
 .proj-link-wrap {
 	gap: 10px;
 	margin-top: 0px;
@@ -1528,7 +1520,6 @@ footer {
 .project-cover-img {
 	object-fit: cover;
 	width: 100%;
-	max-width: 920px;
 }
 
 
