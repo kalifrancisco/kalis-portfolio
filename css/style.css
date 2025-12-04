@@ -1024,7 +1024,7 @@ footer {
 .text-media-img {
 	width: 7%;
 	height: auto;
-	padding-top: 4px;
+	/* padding-top: 4px; */
 }
 
 .bold-about {
@@ -1686,15 +1686,14 @@ footer {
 	align-items: flex-start;
 	gap: 7rem;
 	justify-content: center;
-	margin-top: 10%;
+	margin-top: 6%;
 }
 
 .about-wrap-img {
-	width: 30%;
+	width: 36%;
 }
 
 .about-text-wrap {
-	gap: 1.5rem;
 	width: 30%;
 	align-items: flex-start;
 }
