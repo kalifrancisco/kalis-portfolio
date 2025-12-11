@@ -201,7 +201,7 @@ document.querySelectorAll('.media-flex').forEach(mediaFlex => {
 const experienceSections = document.querySelectorAll('.bg-scroll');
 
 const observerOptions = {
-  threshold: 0.5 
+  threshold: .3
 };
 
 const observer = new IntersectionObserver((entries) => {
