@@ -941,6 +941,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 6rem;
+	margin-top: 2rem;
 }
 
 .right-col-extra {
@@ -1629,7 +1630,7 @@ footer {
 
 .bottom-foot {
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: start;
 	align-items: center;
 }
 

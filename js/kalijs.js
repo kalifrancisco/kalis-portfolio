@@ -218,7 +218,7 @@ experienceSections.forEach(section => observer.observe(section));
 
 
 // back to top:
-document.querySelectorAll('.top-button, .top-button-white').forEach(button => {
+document.querySelectorAll('.top-button:not(#copyEmailBtn), .top-button-white').forEach(button => {
   button.addEventListener('click', function(e) {
     e.preventDefault(); 
     window.scrollTo({
@@ -227,6 +227,7 @@ document.querySelectorAll('.top-button, .top-button-white').forEach(button => {
     });
   });
 });
+
 
 // jump to project:
 document.querySelectorAll('.password-wrap a[href^="#"]').forEach(link => {
@@ -271,5 +272,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   img.addEventListener("click", () => {
     window.location.href = link.href;
+  });
+});
+
+
+// copy email
+const copyBtn = document.getElementById("copyEmailBtn");
+const email = "kalf@umich.edu";
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(email).then(() => {
+    copyBtn.innerHTML = '<span class="arrow">✅</span> Email copied';
+
+    setTimeout(() => {
+      copyBtn.innerHTML = '<span class="arrow">📋</span> Copy email';
+    }, 5000);
+  }).catch(err => {
+    console.error("Failed to copy email: ", err);
   });
 });
