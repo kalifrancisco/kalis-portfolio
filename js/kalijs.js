@@ -291,3 +291,39 @@ copyBtn.addEventListener("click", () => {
     console.error("Failed to copy email: ", err);
   });
 });
+
+
+// view project button cursor:
+document.addEventListener("DOMContentLoaded", () => {
+  const cursorCTA = document.getElementById("cursor-cta");
+  const projects = document.querySelectorAll(".project-wrap");
+
+  let currentLink = null;
+
+  // Move CTA with mouse
+  document.addEventListener("mousemove", (e) => {
+    cursorCTA.style.left = `${e.clientX}px`;
+    cursorCTA.style.top = `${e.clientY}px`;
+  });
+
+  projects.forEach(project => {
+    const link = project.querySelector("a");
+
+    project.addEventListener("mouseenter", () => {
+      currentLink = link;
+      cursorCTA.classList.add("active");
+    });
+
+    project.addEventListener("mouseleave", () => {
+      cursorCTA.classList.remove("active");
+      currentLink = null;
+    });
+  });
+
+  // Click behavior
+  document.addEventListener("click", () => {
+    if (currentLink) {
+      currentLink.click();
+    }
+  });
+});

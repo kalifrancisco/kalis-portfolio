@@ -91,27 +91,27 @@
 .nf-sub-wrap {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 12px;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .section-rows {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 4rem;
+}
+
+.project-wrap-2 {
+	margin-top: 0rem;
 }
 
 .section-rows > section {
   flex: 1;
-}
-
-.section-rows section p {
-  width: 100%;
 }
 
 .about-flex {
@@ -148,12 +148,12 @@ section p {
     font-family: "Helvetica Now Text Regular";
     font-size: 13px;
     line-height: 130%;
-    width: 50%;
+    width: 100%;
 }
 
 section h3 {
     font-family: "Literata 24 Medium";
-    font-size: 24px;
+    font-size: 20px;
     color: #2B2E2E;
 }
 
@@ -217,6 +217,10 @@ section {
     gap: 20px;
 }
 
+section p {
+    width: 50%;
+}
+ 
  .project-outer-wrap {
     margin-top: 1.2% 3%;
 }
@@ -232,7 +236,7 @@ section {
 
 .col-project-flex {
     margin-top: 4rem;
-    gap: 6rem;
+    gap: 8rem;
     width: 70vw;
 }
 
@@ -294,6 +298,15 @@ section h3 {
 section p {
     font-size: 16px;
 }
+
+.section-rows section p {
+  width: 100%;
+}
+
+.section-rows {
+    flex-direction: row;
+}
+
 
 section h3 {
     font-size: 28px;
