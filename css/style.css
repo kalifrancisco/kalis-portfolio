@@ -342,6 +342,10 @@ main {
 	top: 20px;
 }
 
+#cursor-cta {
+	display: none;
+}
+
 /* FOOTER MOBILE */
 footer {
 	margin-top: 16%;
