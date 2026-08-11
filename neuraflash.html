@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
 	<link rel="icon" href="images/rib.png">
+    <link rel="stylesheet" href="css/info.css">
 	<title>Kali Francisco</title>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DV760NDS7N"></script>
@@ -20,25 +21,10 @@
 </script>
 
 <body>
-    <div id="scroll-progress-bar"></div>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header class="head">
-	<!-- nav bar: -->
-    <nav class="navfixed">
-		<div class="nav-title-wrap">
-			<a href="index.html" class="fullname-logo">Kali Francisco ⋆˚𓈒𓏸</a>
-			<p>UX Designer</p>
-		</div>
-        <ul class="nav_links">
-			<li class="navitem"><a href="scraps.html">Play</a></li>
-			<div class="info-wrap">
-				<li class="navitem"><a href="about.html">Info</a></li>
-				<img class="info-pic" src="images/info-pic.png">
-			</div>
-            <li class="navitem"><a href="docs/Kali_Francisco_TwoCol_Resume.pdf" target="_blank">Resume</a></li>
-		</ul>
-	</nav>
-	</header>
+		<site-nav></site-nav>
+	</header> 
 
 	<main class="project-main" tabindex="0">
 		<div class="project-wrap-2">
@@ -48,12 +34,12 @@
             <div class="about-flex">
                 <div class="nf-title-wrap">
                     <div class="nf-sub-wrap">
-                        <h1 class="project-h1">NeuraFlash x Taco Bell</h1>
-                        <p class="project-p">Support site design that secured a $280K deal with Taco Bell</p>
+                        <h1 class="project-h1">Taco Bell</h1>
+                        <p class="project-p">Support site design that secured NeuraFlash a $280K deal with Taco Bell</p>
                     </div>
                     <div class="password-wrap">
                         <a href="#final-design" style="text-decoration: none; color: inherit;"rel="noopener noreferrer">
-                        <div class="primary-cta">Go to final designs</div></a>
+                        <div class="primary-cta cta-purple">Go to final designs</div></a>
                     </div>
                 </div>
                 <div class="project-metadata">
@@ -109,11 +95,11 @@
                         <img src="images/research-points.png" style="width: 100%;">
                     </section>
                 </div>
-                <!-- <section>
+                <section>
                     <h3>Guiding Features</h3>
                     <p>Competitive analysis helped identify which features would create a well-defined deflection funnel.</p> 
                     <img src="images/competitive-analysis-nf.png" style="width: 80%;">
-                </section> -->
+                </section>
                 <section id="challenge">
                         <h3>Establishing a Clear Defleciton Path</h3>
                         <p>As a result, the user flow gives users the option to get help right away, but nudges them towards self-service first.</p> 
@@ -151,41 +137,31 @@
                             <p>This role forced me to discover design solutions that pleased the client while maintaining careful attention to the end users’ pain points.<br><br>Stepping up to this challenge meant developing a flexible attitude towards design critique and iteration even at the end stages of the delivery process.</p> 
                     </section>
                 </div>
+                <section id="next-project">
+                    <a href="collage.html" class="next-project-link">
+                        <div class="next-subhead">
+                            <h4>Collage</h4>
+                            <p>Ed-tech startup combinding AI college advisor with student networking</p>
+                        </div>
+                        <div class="next-wrap">
+                            <img src="images/collage-0.png" alt="Collage project image">
+                            <button class="next">Next ›</button>
+                        </div>
+                    </a>
+                </section>
                 </div>
             </div>
        </div>
 	</main>
 
-    <footer tabindex="0">
-		<div class="foot-wrap">
-			<div class="footer-flex">
-				<div class="update-div">
-					<p class="rights">Kali Francisco © 2025</p>
-					<p class="bottom-footer-p">this site is <span class="pink">carefully coded by me</span> and is constantly evolving</p>
-				</div>
-				<div class="social-icon-wrap">
-					<a href="https://www.linkedin.com/in/kalifrancisco/" target="_blank">
-						<img src="images/linkedin-in.png" alt="LinkedIn Icon" />
-					</a>
-					<a href="https://x.com/kaliiiiif" target="_blank">
-						<img src="images/x-icon.png" alt="X Icon" />
-					</a>
-					<a href="https://www.are.na/kali-francisco/channels" target="_blank">
-						<img src="images/arena-icon.png" alt="Arena Icon" />
-					</a>
-					<a href="docs/Kali_Francisco_TwoCol_Resume.pdf" target="_blank">
-						<img src="images/resume-icon.png" alt="Resume Icon" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="bottom-foot">
-			<p class="bottom-footer-p top-button"><span class="arrow">☝️</span> Back to top</p>
-			<p class="bottom-footer-p top-button" id="copyEmailBtn"><span class="arrow">📋</span> Copy email</p><div>
+	<footer tabindex="0">
+		<site-footer></site-footer>
 	</footer>
-    
-	<script src='js/kalijs.js'></script>
-	<script src='js/footer.js'></script>
+
+        <script src="js/components/site-nav.js"></script>
+        <script src="js/components/site-footer.js"></script>
+        <script src="js/info-dropdown.js"></script>
+        <script src="js/kalijs.js"></script>
 	</main>
 </body>
 </html>

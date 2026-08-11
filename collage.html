@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
 	<link rel="icon" href="images/rib.png">
+    <link rel="stylesheet" href="css/info.css">
 	<title>Kali Francisco</title>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DV760NDS7N"></script>
@@ -20,26 +21,15 @@
 </script>
 
 <body>
-    <div id="scroll-progress-bar"></div>
-    
+	<div id="loading-screen" class="loading">
+		<div class="load-wrap">
+			<p class="loading-date">hello digital traveler</p>
+		</div>
+	</div>
+	
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header class="head">
-	<!-- nav bar: -->
-    <nav class="navfixed">
-		<div class="nav-title-wrap">
-			<a href="index.html" class="fullname-logo">Kali Francisco ⋆˚𓈒𓏸</a>
-			<p>UX Designer</p>
-		</div>
-        <ul class="nav_links">
-			<li class="navitem"><a href="scraps.html">Play</a></li>
-			<div class="info-wrap">
-				<li class="navitem"><a href="about.html">Info</a></li>
-				<img class="info-pic" src="images/info-pic.png">
-			</div>
-            <li class="navitem"><a href="docs/Kali_Francisco_TwoCol_Resume.pdf" target="_blank">Resume</a></li>
-
-		</ul>
-	</nav>
+		<site-nav></site-nav>
 	</header>
 
 	<main class="project-main" tabindex="0">
@@ -54,7 +44,7 @@
                 </div>
                 <div class="password-wrap">
                     <a href="#design" style="text-decoration: none; color: inherit;">
-                    <div class="primary-cta">Jump to final designs</div></a>
+                    <div class="primary-cta cta-pink">Jump to final designs</div></a>
                 </div>
             </div>
              <div class="about-flex">
@@ -119,39 +109,29 @@
                 <p>Designing for Collage helped me explore how to best work in an agile, fast-paced start-up environment with a team of developers, product managers, and founders. Designing quickly and pitching ideas frequently was key to our progress.<br><br>To learn more, check out Collage on <a href="https://www.linkedin.com/company/collageus/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><span class="link-standard">LinkedIn</span></a> and <a href="https://www.instagram.com/collage.us/" target="_blank" rel="noopener noreferrer"><span class="link-standard">Instagram</span></a>.</p>
                 <p class="research">*Web app is currently under construction</p>
             </section>
+             <section id="next-project">
+                <a href="applemessagesforbusiness.html" class="next-project-link">
+                    <div class="next-subhead">
+                        <h4>Apple</h4>
+                        <p>Bringing business chat to life through agentic AI</p>
+                    </div>
+                    <div class="next-wrap">
+                        <img src="images/amb/amb-1.png" alt="AMB project image">
+                        <button class="next">Next ›</button>
+                    </div>
+                </a>
+            </section>
        </div>
 	</main>
 
-     <footer tabindex="0">
-		<div class="foot-wrap">
-			<div class="footer-flex">
-				<div class="update-div">
-					<p class="rights">Kali Francisco © 2025</p>
-					<p class="bottom-footer-p">this site is <span class="pink">carefully coded by me</span> and is constantly evolving</p>
-				</div>
-				<div class="social-icon-wrap">
-					<a href="https://www.linkedin.com/in/kalifrancisco/" target="_blank">
-						<img src="images/linkedin-in.png" alt="LinkedIn Icon" />
-					</a>
-					<a href="https://x.com/kaliiiiif" target="_blank">
-						<img src="images/x-icon.png" alt="X Icon" />
-					</a>
-					<a href="https://www.are.na/kali-francisco/channels" target="_blank">
-						<img src="images/arena-icon.png" alt="Arena Icon" />
-					</a>
-					<a href="docs/Kali_Francisco_TwoCol_Resume.pdf" target="_blank">
-						<img src="images/resume-icon.png" alt="Resume Icon" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="bottom-foot">
-			<p class="bottom-footer-p top-button"><span class="arrow">☝️</span> Back to top</p>
-			<p class="bottom-footer-p top-button" id="copyEmailBtn"><span class="arrow">📋</span> Copy email</p><div>
+ 	<footer tabindex="0">
+		<site-footer></site-footer>
 	</footer>
-    
-	<script src='js/kalijs.js'></script>
-	<script src='js/footer.js'></script>
+
+	<script src="js/components/site-nav.js"></script>
+	<script src="js/components/site-footer.js"></script>
+	<script src="js/info-dropdown.js"></script>
+	<script src="js/kalijs.js"></script>
 	</main>
 </body>
 </html>

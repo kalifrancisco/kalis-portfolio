@@ -1,0 +1,256 @@
+.dropdown-headline {
+    display: flex;
+    color: #757575;
+    font-size: 11px;
+    font-family: "Literata 24 medium";
+	margin-bottom: 8px;
+}
+.dropdown-headline:first-child { margin-top: 0; }
+
+.dropdown-subheadline {
+	font-family: "PP Mori SemiBold";
+	font-size: 11px;
+	color: #393939;
+}
+
+.dropdown-subtext {
+	font-family: "PP Mori Regular";
+	font-size: 10px;
+	line-height: 130%;
+	color: #757575;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dropdown-row {
+	font-family: "PP Mori SemiBold";
+	font-size: 11px;
+	color: #393939;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dropdown-body {
+	font-family: "PP Mori Regular";
+	font-size: 11px;
+	color: #545454;
+	line-height: 130%;
+}
+
+.dropdown-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.col-section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.col-section:last-child {
+	margin-bottom: 24px;
+}
+
+.dropdown-link-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.dropdown-link-list a {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    color: #2673E7;
+    transition: color 200ms ease-in-out;
+}
+
+.list-b a {
+	color: rgb(117, 117, 117);
+}
+
+.dropdown-link-list a:hover { color: #6096e8; }
+
+.list-b a:hover { color: #393939; }
+
+.navfixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+}
+
+.info-dropdown {
+	position: fixed;
+	top: 2%;
+	left: 4%;
+	right: 4%;
+	bottom: 0;
+	background: #EEF0F2;
+	padding-top: clamp(72px, 14vh, 160px);
+	border-bottom: .5px solid #858585;
+	z-index: 999;
+
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: contain;
+
+	transform: translateY(-100%);
+	opacity: 0;
+	pointer-events: none;
+	transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.3s ease-in-out;
+}
+
+.info-dropdown.open {
+	transform: translateY(0);
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.info-date {
+    font-size: 11px;
+    font-family: "PP Mori Regular";
+}
+
+/* single col for mobile first */
+.info-dropdown-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+    margin: 4% 2%;
+	margin: 0 auto;
+}
+
+.info-col {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+/* mobile: visual separation between stacked sections */
+.info-col:not(:last-child) {
+	padding-bottom: 32px;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.dropdown-photo img {
+	width: 40%;
+	border-radius: 2px;
+	transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.dropdown-photo {
+	position: relative;
+	z-index: 2;
+}
+
+.dropdown-photo img:hover {
+	transform: skewX(3deg);
+	box-shadow: 0px 4px 8px rgba(3, 63, 141, 0.115);
+}
+
+.info-hover {
+	display: none;
+}
+
+/* TABLET: 2 cols */
+@media screen and (min-width: 768px) {
+	.info-dropdown-inner {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+
+    .info-dropdown {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: auto;
+		height: 100dvh;
+		margin: 2%; 
+	}
+
+	.dropdown-photo img {
+		width: 30%;
+	}
+
+}
+
+/* LAPTOP: 4 cols */
+@media screen and (min-width: 992px) {
+	.info-dropdown-inner {
+		flex-direction: row;
+		gap: 62px;
+		justify-content: center;
+		margin: 6% 2%;
+	}
+
+	.info-col {
+		max-width: 21vw;
+		padding-bottom: 0; border-bottom: none;
+		position: relative;
+	}
+
+	.dropdown-photo img {
+		width: 55%;
+	}
+
+    .info-dropdown {
+		margin-top: 0%;
+		left: 0;
+		right: 0;
+		bottom: auto;
+		height: 100dvh;
+		padding-top: 0%;
+	}
+
+    .info-col:not(:last-child) {
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+
+    .dropdown-body, .dropdown-subtext, .dropdown-row, .dropdown-subheadline {
+        font-size: 12px;
+    }
+
+    .dropdown-headline {
+        font-size: 12px;
+		margin-bottom: 16px;
+    }
+
+	.info-hover {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		pointer-events: none;
+
+		opacity: 0;
+		transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+	}
+
+
+	.info-hover img {
+		position: absolute;
+		width: 16%;
+		top: 35%;
+		left: 56%;
+		rotate: 16deg;
+		transform: translate(-50%, -30%) scale(0.85);
+		transition: all .39s cubic-bezier(0.65, 0, 0.35, 1);
+	}
+
+	.dropdown-photo:hover ~ .info-hover {
+		opacity: 1;
+	}
+
+	.dropdown-photo:hover ~ .info-hover img {
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+}

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
 	<link rel="icon" href="images/rib.png">
+    <link rel="stylesheet" href="css/info.css">
 	<title>Kali Francisco</title>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DV760NDS7N"></script>
@@ -20,24 +21,9 @@
 </script>
 
 <body>
-    <div id="scroll-progress-bar"></div>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header class="head">
-	<!-- nav bar: -->
-    <nav class="navfixed">
-		<div class="nav-title-wrap">
-			<a href="index.html" class="fullname-logo">Kali Francisco ⋆˚𓈒𓏸</a>
-			<p>UX Designer</p>
-		</div>
-        <ul class="nav_links">
-			<li class="navitem"><a href="scraps.html">Play</a></li>
-			<div class="info-wrap">
-				<li class="navitem"><a href="about.html">Info</a></li>
-				<img class="info-pic" src="images/info-pic.png">
-			</div>
-            <li class="navitem"><a href="docs/Kali_Francisco_TwoCol_Resume.pdf" target="_blank">Resume</a></li>
-		</ul>
-	</nav>
+		<site-nav></site-nav>
 	</header>
 
 	<main class="project-main" tabindex="0">
@@ -48,18 +34,18 @@
              <div class="nf-title-wrap">
                     <div class="nf-sub-wrap">
                         <h1 class="project-h1">Mindmap</h1>
-                        <p class="project-p">Web app audio visualizer using digital media</p>
+                        <p class="project-p">Audio visualizer using digital media</p>
                     </div>
                     <div class="password-wrap">
                         <a href="#final-design" style="text-decoration: none; color: inherit;">
-                        <div class="primary-cta">Jump to final designs</div></a>
+                        <div class="primary-cta cta-orange">Jump to final designs</div></a>
                     </div>
                 </div>
                 <div class="about-flex">
                     <div class="project-metadata">
                         <div class="meta-flex">
                             <p class="meta-label">Timeline</p>
-                            <p class="project-label">May 2025</p>
+                            <p class="project-label">May 2025 (3 weeks)</p>
                         </div>
                         <div class="meta-flex">
                             <p class="meta-label">Role</p>
@@ -67,11 +53,11 @@
                         </div>
                         <div class="meta-flex">
                             <p class="meta-label">Tools</p>
-                            <p class="project-label">Figma,<br> Adobe After Effects</p>
+                            <p class="project-label">Figma<br> Adobe After Effects</p>
                         </div>
                         <div class="meta-flex">
                             <p class="meta-label">Skills</p>
-                            <p class="project-label">Interaction Design,<br> Product Design,<br> Conceptual Design</p>
+                            <p class="project-label">Interaction Design<br> Product Design<br> Conceptual Design</p>
                         </div>
                 </div>
             </div>
@@ -133,40 +119,29 @@
                 <h3>Next Steps</h3>
                 <p>Mindmap helped me learn the amount of conceptual work that goes into motion and interaction design for consumer-facing products. In the future, I hope to develop Mindmap into a 3D visualization experience using Three.js.<br><br>That's all for now, cheers!</p>
             </section>
+           <section id="next-project">
+                <a href="vegyn.html" class="next-project-link">
+                    <div class="next-subhead">
+                        <h4>Vegyn</h4>
+                        <p>Creative coding website for music producer, Vegyn</p>
+                    </div>
+                    <div class="next-wrap">
+                        <img src="../images/vegyn-1.png" alt="Vegyn project image">
+                        <button class="next">Next ›</button>
+                    </div>
+                </a>
+            </section>
         </div>
        </div>
 	</main>
 
-      <footer tabindex="0">
-		<div class="foot-wrap">
-			<div class="footer-flex">
-				<div class="update-div">
-					<p class="rights">Kali Francisco © 2025</p>
-					<p class="bottom-footer-p">this site is <span class="pink">carefully coded by me</span> and is constantly evolving</p>
-				</div>
-				<div class="social-icon-wrap">
-					<a href="https://www.linkedin.com/in/kalifrancisco/" target="_blank">
-						<img src="images/linkedin-in.png" alt="LinkedIn Icon" />
-					</a>
-					<a href="https://x.com/kaliiiiif" target="_blank">
-						<img src="images/x-icon.png" alt="X Icon" />
-					</a>
-					<a href="https://www.are.na/kali-francisco/channels" target="_blank">
-						<img src="images/arena-icon.png" alt="Arena Icon" />
-					</a>
-					<a href="docs/Kali_Francisco_TwoCol_Resume.pdf" target="_blank">
-						<img src="images/resume-icon.png" alt="Resume Icon" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="bottom-foot">
-			<p class="bottom-footer-p top-button"><span class="arrow">☝️</span> Back to top</p>
-			<p class="bottom-footer-p top-button" id="copyEmailBtn"><span class="arrow">📋</span> Copy email</p><div>
+	<footer tabindex="0">
+		<site-footer></site-footer>
 	</footer>
-    
-	<script src='js/kalijs.js'></script>
-	<script src='js/footer.js'></script>
+        <script src="js/components/site-nav.js"></script>
+        <script src="js/components/site-footer.js"></script>
+        <script src="js/info-dropdown.js"></script>
+        <script src="js/kalijs.js"></script>
 	</main>
 </body>
 </html>

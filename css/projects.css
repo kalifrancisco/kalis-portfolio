@@ -35,13 +35,13 @@
 
 .project-h1 {
     font-family: "Literata 24 Medium";
-    font-size: 26px;
+    font-size: 18px;
     color: #2B2E2E;
 }
 
 .project-p {
 	color: #2B2E2E;
-	font-family: "Helvetica Now Text Regular";
+	font-family: "PP Mori Regular";
 	font-size: 14px;
     line-height: 130%;
 }
@@ -64,19 +64,19 @@
   color: #606565;
   text-decoration: none;
   font-size: 11px;
-  font-family: "Helvetica Now Text Regular";
+  font-family: "Literata 24 regular";
 }
 
 .research {
     color: #606565;
-    font-size: 11px;
-    font-family: "Helvetica Now Text Regular";
+    font-size: 10px;
+    font-family: "PP Mori Regular";
 }
 
 .research-link {
     text-decoration: underline;
     color: #606565;
-    font-family: "Helvetica Now Text Regular";
+    font-family: "PP Mori Regular";
 }
 
 .link-standard {
@@ -97,13 +97,67 @@
 section {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
 }
 
 .section-rows {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+.smooth-vid {
+    width: 100%;
+    height: 480px;
+}
+
+.stat-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 65%;
+    align-items: center;
+}
+
+.impact-rows {
+    align-items: center;
+}
+
+.stat-label {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 6px 16px;
+    border: 1px solid #00A1E0;
+    border-radius: 4px;
+    color: #00A1E0;
+    font-family: "PP Mori Regular";
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: center;
+}
+
+.stat-number {
+    font-family: "Literata 24 Light";
+    font-size: 48px;
+    color: #2B2E2E;
+    line-height: 1;
+}
+
+.stat-desc {
+    color: #545454;
+    font-family: "PP Mori Regular";
+    font-size: 12px;
+    line-height: 130%;
+    width: 80%;
 }
 
 .project-wrap-2 {
@@ -138,24 +192,90 @@ section {
 
 .meta-label {
     display: flex;
-    color: #2B2E2E;
+    color: #858585;
     font-size: 13px;
-    font-family: "Helvetica Now Text Regular";
+    font-family: "Literata 24 medium";
 }
 
 section p {
     color: #545454;
-    font-family: "Helvetica Now Text Regular";
-    font-size: 13px;
+    font-family: "PP Mori Regular";
+    font-size: 11px;
     line-height: 130%;
     width: 100%;
 }
 
+.p-link {
+    color: #3a23e4;
+}
+
+.p-link:hover {
+    text-decoration: underline;
+    color: #24168a;
+}
+
 section h3 {
     font-family: "Literata 24 Medium";
-    font-size: 20px;
+    font-size: 16px;
     color: #2B2E2E;
 }
+
+section h4 {
+    font-family: "Literata 24 Medium";
+    font-size: 12px;
+    line-height: 130%;
+    color: #2B2E2E;
+}
+
+#next-project {
+    display: flex;
+    margin-top: 2rem;
+    padding: 12px;
+    border: .5px solid #757575;
+    border-radius: 2px;
+    transition: all 200ms ease-in-out;
+}
+
+#next-project:hover {
+    background-color: #e3e3e6;
+}
+
+#next-project img {
+    width: 20%;
+    border-radius: 2px;
+    border: .5px solid #858585;
+}
+
+.next-subhead {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.next-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.next {
+    all: unset;
+    cursor: pointer;
+    color: #757575;
+    font-family: "PP Mori Regular";
+    font-size: 11px;
+}
+
+#next-project:hover .next {
+    color: #393939;
+}
+
+.next-project-link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 
 .sec-img {
     width: 100%;
@@ -214,11 +334,15 @@ section h3 {
 @media screen and (min-width: 992px) { 
 
 section {
-    gap: 20px;
+    gap: 12px;
 }
 
 section p {
     width: 50%;
+}
+
+.stat-card {
+    width: 100%;
 }
  
  .project-outer-wrap {
@@ -226,8 +350,7 @@ section p {
 }
 
 .project-h1 {
-    font-size: 42px;
-    margin-bottom: 8px;
+    font-size: 28px;
 }
 
 .project-p {
@@ -235,9 +358,9 @@ section p {
 }
 
 .col-project-flex {
-    margin-top: 4rem;
-    gap: 8rem;
-    width: 70vw;
+    margin-top: 6rem;
+    gap: 4rem;
+    width: 60vw;
 }
 
  .left-col {
@@ -296,7 +419,7 @@ section h3 {
 }
 
 section p {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .section-rows section p {
@@ -307,10 +430,41 @@ section p {
     flex-direction: row;
 }
 
+.stat-number {
+        font-size: 64px;
+    }
+
+    .stat-label {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+
+    .stat-desc {
+        font-size: 13px;
+        width: 90%;
+    }
 
 section h3 {
-    font-size: 28px;
+    font-size: 20px;
 }
+
+section h4 {
+    font-size: 16px;
+}
+
+.next {
+    font-size: 12px;
+}
+
+#next-project {
+    margin-top: 6rem;
+    padding: 20px;
+}
+
+.next-project-link {
+    gap: 12px;
+}
+
 
 .section-wrap {
     gap: 1vh;
@@ -330,9 +484,8 @@ section h3 {
 }
 
 .research {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 140%;
-    width: 30%;
 }
 
 .research-link:hover {
@@ -341,21 +494,6 @@ section h3 {
 
 .end-small-img {
     width: 30%;
-}
-
-.button-next {
-	font-size: 16px;
-	padding: 10px 10px; 
-    font-family: "Helvetica Now Text Medium";
-	border: 1px solid;
-	transition: all 300ms ease-in-out;
-}
-
-.button-next:hover {
-	background-color: #e183bf;
-	border: 1px solid #4f0633;
-    color: #5D003A;
-	padding: 10px 14px; 
 }
 
 .nf-title-wrap {
