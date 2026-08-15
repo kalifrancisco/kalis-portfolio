@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
 
                         <div class="dropdown-link-list">
-                            <div class="dropdown-row"><span>UX Designer (founding team)</span><span class="info-date">may '23 - dec '24</span></div>
+                            <div class="dropdown-row"><span>UX Designer</span><span class="info-date">may '23 - dec '24</span></div>
                             <p class="dropdown-subtext">Bubble Learn Science</p>
                         </div>
                     </div>
