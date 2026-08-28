@@ -26,6 +26,7 @@
 	font-family: "PP Mori SemiBold";
 	font-size: 11px;
 	color: #393939;
+	gap: 16px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -188,7 +189,7 @@
 	}
 
 	.info-col {
-		max-width: 21vw;
+		max-width: 22vw;
 		padding-bottom: 0; border-bottom: none;
 		position: relative;
 	}
