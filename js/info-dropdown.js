@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="col-section">
                         <h2 class="dropdown-headline">Experience</h2>
                         <div class="dropdown-link-list">
-                            <div class="dropdown-row"><span>Associate UX Designer</span><span class="info-date">jan '25 - present</span></div>
+                            <div class="dropdown-row"><span>UX Designer</span><span class="info-date">jan '25 - present</span></div>
                             <p class="dropdown-subtext">NeuraFlash, part of Accenture</p>
                         </div>
 
