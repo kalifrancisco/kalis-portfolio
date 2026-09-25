@@ -26,7 +26,7 @@
 	font-family: "PP Mori SemiBold";
 	font-size: 11px;
 	color: #393939;
-	gap: 16px;
+	gap: 20px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -47,7 +47,7 @@
 .col-section {
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 16px;
 }
 
 .col-section:last-child {
@@ -57,7 +57,7 @@
 .dropdown-link-list {
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	gap: 6px;
 }
 
 .dropdown-link-list a {
@@ -183,7 +183,7 @@
 @media screen and (min-width: 992px) {
 	.info-dropdown-inner {
 		flex-direction: row;
-		gap: 62px;
+		gap: 72px;
 		justify-content: center;
 		margin: 6% 2%;
 	}

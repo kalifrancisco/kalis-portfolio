@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="dropdown-wrap">
                         <h3 class="dropdown-subheadline">design</h3>
                         <div class="dropdown-link-list list-b">
-                            <a href="https://yigit.world" target="_blank" class="dropdown-subtext">yigit.world</a>
+                            <a href="https://un-ison.web.app/" target="_blank" class="dropdown-subtext">un-ison.web.app</a>
+                        <a href="https://yigit.world" target="_blank" class="dropdown-subtext">yigit.world</a>
                             <a href="https://www.pentagram.com/work/poetry-magazine" target="_blank" class="dropdown-subtext">Pentagram for Poetry Magazine</a>
                             <a href="https://typotheque.le75.be/" target="_blank" class="dropdown-subtext">Typothèque Esa le 75</a>
                         </div>
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <a href="https://fontsinuse.com/in/2/formats/72/album-art" target="_blank" class="dropdown-subtext">fontsinuse.com</a>
                                 <a href="https://cari.institute/" target="_blank" class="dropdown-subtext">cari.institute</a>
                                 <a href="https://aesthetic-programming.net/" target="_blank" class="dropdown-subtext">aesthetic-programming.net</a>
+                                 <a href="https://monoskop.org/images/5/59/Sontag_Susan_1964_Notes_on_Camp.pdf" target="_blank" class="dropdown-subtext">Notes on Camp</a>
                             </div>
                         </div>
                     </div>
