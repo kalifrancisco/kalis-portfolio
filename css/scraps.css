@@ -52,11 +52,19 @@
 @media screen and (min-width: 992px) {
   .archive-grid-scrap {
     column-count: 3;
-    column-gap: 20px;
+    column-gap: 16px;
+  }
+  
+  .hover-yes {
+    transition: filter 0.2s ease-in-out;
+  }
+
+  .hover-yes:hover {
+    filter: brightness(50%);
   }
 
   .play-wrap {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .project-label_small {
@@ -64,6 +72,6 @@
   }
 
   .project-label_small {
-    padding: 3px;
+    padding: 4px;
   }
 }

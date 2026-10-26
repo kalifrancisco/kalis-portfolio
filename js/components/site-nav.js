@@ -8,13 +8,13 @@ class SiteNav extends HTMLElement {
 			<nav class="navfixed">
 				<div class="nav-title-wrap">
 					<a href="index.html"><img src="images/green-gradient-square.png"></a>
-					<p>Kali is a Los Angeles based Design Engineer;<br>Creating experiences for Apple, Taco Bell, Vans, etc @ Neuraflash (Accenture)</p>
+					<p>Kali is a LA based Design Engineer;<br>Creating experiences for Apple, Taco Bell, Vans, etc @ NeuraFlash (Accenture)</p>
 				</div>
 				<div class="nav_links_icons_wrap">
 					<ul class="nav_links">
 						<li class="navitem"><a href="play.html">Play</a></li>
 						<li class="navitem"><a href="about.html" id="info-toggle" aria-expanded="false" aria-controls="info-dropdown">Info+</a></li>
-						<li class="navitem"><a href="mailto:kalf@umich.edu">kalf@umich.edu</a></li>
+						<li class="navitem"><a href="mailto:kalf@umich.edu">Email</a></li>
 					</ul>
 				</div>
 			</nav>

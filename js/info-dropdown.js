@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="info-col">
                     <div class="col-section">
                          <h2 class="dropdown-headline">About Me</h2>
-                        <p class="dropdown-body">Hi, I'm Kali! As a designer, I specialize in elevating brands and teams by unraveling complex business challenges into measurable results and memorable web experiences.<br><br>My computer science background drives the precision in my design work and encourages me to be a critical problem solver whilst pushing creative boundaries. I care deeply about the metacognitive process of abstraction and how it helps coherently stitch together systems, concepts, and ideas into designs. This curiosity is at the forefront of my love for design, engineering, and research.<br><br>Outside work, find me hiking or biking, conducting aesthetic & typographic research, or producing music!</p>
+                        <p class="dropdown-body">I specialize in elevating brands and teams by unraveling complex business challenges into measurable results and memorable web experiences.<br><br>My computer science background drives the precision in my design work and encourages me to be a critical problem solver whilst pushing creative boundaries. I care deeply about the metacognitive process of abstraction and how it helps stitch together systems, concepts, and ideas into designs. This curiosity is at the forefront of my love for design, engineering, and research.<br><br>Outside work, find me hiking or biking, conducting aesthetic & typographic research, or producing music!</p>
                     </div>
                     <div class="col-section">
                         <div class="info-col">
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="info-col">
                     <div class="col-section">
                         <div class="dropdown-link-list">
-                            <a href="https://www.are.na/kali-francisco/channels" target="_blank" class="dropdown-subtext">are.na</a>
+                            <a href="https://www.are.na/kali-francisco/channels" target="_blank" class="dropdown-subtext">Are.na</a>
                             <a href="mailto:kalf@umich.edu" class="dropdown-subtext">Email</a>
                             <a href="https://www.github.com/kalifrancisco" target="_blank" class="dropdown-subtext">Github</a>
                             <a href="https://www.instagram.com/chicanekali/" target="_blank" class="dropdown-subtext">Instagram</a>
